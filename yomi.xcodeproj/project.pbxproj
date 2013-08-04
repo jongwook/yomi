@@ -17,7 +17,7 @@
 		518FD76217AE9FC300A33FAE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 518FD76117AE9FC300A33FAE /* Default@2x.png */; };
 		518FD76417AE9FC300A33FAE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 518FD76317AE9FC300A33FAE /* Default-568h@2x.png */; };
 		518FD76717AE9FC300A33FAE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518FD76517AE9FC300A33FAE /* MainStoryboard.storyboard */; };
-		518FD76A17AE9FC300A33FAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518FD76917AE9FC300A33FAE /* ViewController.m */; };
+		518FD76A17AE9FC300A33FAE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518FD76917AE9FC300A33FAE /* SearchViewController.m */; };
 		518FD77217AE9FC300A33FAE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518FD77117AE9FC300A33FAE /* SenTestingKit.framework */; };
 		518FD77317AE9FC300A33FAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518FD74D17AE9FC300A33FAE /* UIKit.framework */; };
 		518FD77417AE9FC300A33FAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518FD74F17AE9FC300A33FAE /* Foundation.framework */; };
@@ -50,8 +50,8 @@
 		518FD76117AE9FC300A33FAE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		518FD76317AE9FC300A33FAE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		518FD76617AE9FC300A33FAE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		518FD76817AE9FC300A33FAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		518FD76917AE9FC300A33FAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		518FD76817AE9FC300A33FAE /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		518FD76917AE9FC300A33FAE /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		518FD77017AE9FC300A33FAE /* yomiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yomiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		518FD77117AE9FC300A33FAE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		518FD77917AE9FC300A33FAE /* yomiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "yomiTests-Info.plist"; sourceTree = "<group>"; };
@@ -117,11 +117,10 @@
 		518FD75317AE9FC300A33FAE /* yomi */ = {
 			isa = PBXGroup;
 			children = (
+				518FD78817AEA10100A33FAE /* search */,
 				518FD75C17AE9FC300A33FAE /* AppDelegate.h */,
 				518FD75D17AE9FC300A33FAE /* AppDelegate.m */,
 				518FD76517AE9FC300A33FAE /* MainStoryboard.storyboard */,
-				518FD76817AE9FC300A33FAE /* ViewController.h */,
-				518FD76917AE9FC300A33FAE /* ViewController.m */,
 				518FD75417AE9FC300A33FAE /* Supporting Files */,
 			);
 			path = yomi;
@@ -158,6 +157,15 @@
 				518FD77A17AE9FC300A33FAE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		518FD78817AEA10100A33FAE /* search */ = {
+			isa = PBXGroup;
+			children = (
+				518FD76817AE9FC300A33FAE /* SearchViewController.h */,
+				518FD76917AE9FC300A33FAE /* SearchViewController.m */,
+			);
+			name = search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +280,7 @@
 			files = (
 				518FD75A17AE9FC300A33FAE /* main.m in Sources */,
 				518FD75E17AE9FC300A33FAE /* AppDelegate.m in Sources */,
-				518FD76A17AE9FC300A33FAE /* ViewController.m in Sources */,
+				518FD76A17AE9FC300A33FAE /* SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yomi/yomi-Prefix.pch";
 				INFOPLIST_FILE = "yomi/yomi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,6 +406,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yomi/yomi-Prefix.pch";
 				INFOPLIST_FILE = "yomi/yomi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -455,6 +465,7 @@
 				518FD78417AE9FC300A33FAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		518FD78517AE9FC300A33FAE /* Build configuration list for PBXNativeTarget "yomiTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +474,7 @@
 				518FD78717AE9FC300A33FAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
