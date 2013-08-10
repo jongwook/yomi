@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Jong Wook Kim. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "KeyboardAwareViewController.h"
 
-@interface ViewController ()
+@interface KeyboardAwareViewController ()
 
 @end
 
-@implementation ViewController
+@implementation KeyboardAwareViewController
 
 - (void)viewDidLoad
 {

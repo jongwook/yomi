@@ -6,18 +6,21 @@
 //  Copyright (c) 2013 Jong Wook Kim. All rights reserved.
 //
 
-#import "SearchViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface SearchViewController () {
+#import "SearchGithubViewController.h"
+
+@interface SearchGithubViewController () {
 	NSString *lastKeyword;
 	NSURLConnection *lastConnection;
+	NSArray *repositories;
 }
 
 - (void)search:(NSString *)keyword;
 
 @end
 
-@implementation SearchViewController
+@implementation SearchGithubViewController
 
 @synthesize searchField;
 @synthesize activityIndicatorView;
@@ -26,6 +29,8 @@
 {
     [super viewDidLoad];
 	NSLog(@"SearchViewController - viewDidLoad");
+	
+	[self.searchField becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,11 +50,11 @@
 }
 
 - (void)search:(NSString *)keyword {
-	if (![keyword isEqualToString:lastKeyword]) {
+	if (keyword != NULL && ![keyword isEqualToString:lastKeyword]) {
 		NSLog(@"Discarding old keyword %@", keyword);
 		return;
 	}
-	if (keyword.length == 0) {
+	if (keyword == NULL || keyword.length == 0) {
 		[self.activityIndicatorView stopAnimating];
 		[self.countLabel setHidden:YES];
 		return;
@@ -79,9 +84,43 @@
 	[self.countLabel setText:[NSString stringWithFormat:@"%d found", count]];
 	[self.countLabel setHidden:NO];
 	
-	// TODO: display result
+	repositories = (NSArray *)[result objectForKey:@"items"];
+	[self.tableView reloadData];
 	
 	[self.activityIndicatorView stopAnimating];
+}
+
+-(IBAction)close:(id)sender {
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return [repositories count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+
+	if (cell == nil) {
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+		cell.selectionStyle = UITableViewCellSelectionStyleGray;
+	}
+	
+	NSDictionary *item = (NSDictionary *)[repositories objectAtIndex:indexPath.row];
+	
+	id description = [item objectForKey:@"description"];
+	id cloneURL = [item objectForKey:@"clone_url"] ;
+	
+	cell.textLabel.text = [description isKindOfClass:[NSString class]] ? description : @"";
+	cell.detailTextLabel.text = [cloneURL isKindOfClass:[NSString class]] ? cloneURL : @"";
+	cell.imageView.image = [UIImage imageNamed:@"repo32.png"];
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	
+	return cell;
 }
 
 

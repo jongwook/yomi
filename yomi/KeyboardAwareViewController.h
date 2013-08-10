@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface KeyboardAwareViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet NSLayoutConstraint *topConstraint;
 @property (nonatomic, retain) IBOutlet NSLayoutConstraint *bottomConstraint;
