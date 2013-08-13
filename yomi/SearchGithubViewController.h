@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchGithubViewController : UIViewController <NSURLConnectionDataDelegate, UITableViewDataSource>
+@interface SearchGithubViewController : UIViewController <NSURLConnectionDataDelegate, UITableViewDelegate, UITableViewDataSource>
 
 -(IBAction)textChanged:(id)sender;
 -(IBAction)close:(id)sender;

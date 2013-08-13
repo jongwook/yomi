@@ -7,6 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5130C26E17B95E040083F30A /* attr_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1A517B95E040083F30A /* attr_file.c */; };
+		5130C26F17B95E040083F30A /* attr.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1A717B95E040083F30A /* attr.c */; };
+		5130C27017B95E040083F30A /* blob.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1AA17B95E040083F30A /* blob.c */; };
+		5130C27117B95E040083F30A /* branch.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1AC17B95E040083F30A /* branch.c */; };
+		5130C27217B95E040083F30A /* buf_text.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1AF17B95E040083F30A /* buf_text.c */; };
+		5130C27317B95E040083F30A /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1B117B95E040083F30A /* buffer.c */; };
+		5130C27417B95E040083F30A /* cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1B317B95E040083F30A /* cache.c */; };
+		5130C27517B95E040083F30A /* checkout.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1B617B95E040083F30A /* checkout.c */; };
+		5130C27617B95E040083F30A /* clone.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1B817B95E040083F30A /* clone.c */; };
+		5130C27717B95E040083F30A /* commit_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1B917B95E040083F30A /* commit_list.c */; };
+		5130C27817B95E040083F30A /* commit.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1BB17B95E040083F30A /* commit.c */; };
+		5130C27917B95E040083F30A /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1BE17B95E040083F30A /* compress.c */; };
+		5130C27A17B95E040083F30A /* config_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1C017B95E040083F30A /* config_cache.c */; };
+		5130C27B17B95E040083F30A /* config_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1C117B95E040083F30A /* config_file.c */; };
+		5130C27C17B95E040083F30A /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1C317B95E040083F30A /* config.c */; };
+		5130C27D17B95E040083F30A /* crlf.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1C517B95E040083F30A /* crlf.c */; };
+		5130C27E17B95E040083F30A /* date.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1C617B95E040083F30A /* date.c */; };
+		5130C27F17B95E040083F30A /* delta-apply.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1C717B95E040083F30A /* delta-apply.c */; };
+		5130C28017B95E040083F30A /* delta.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1C917B95E040083F30A /* delta.c */; };
+		5130C28117B95E040083F30A /* diff_driver.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1CB17B95E040083F30A /* diff_driver.c */; };
+		5130C28217B95E040083F30A /* diff_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1CD17B95E040083F30A /* diff_file.c */; };
+		5130C28317B95E040083F30A /* diff_patch.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1CF17B95E040083F30A /* diff_patch.c */; };
+		5130C28417B95E040083F30A /* diff_print.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1D117B95E040083F30A /* diff_print.c */; };
+		5130C28517B95E040083F30A /* diff_tform.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1D217B95E040083F30A /* diff_tform.c */; };
+		5130C28617B95E040083F30A /* diff_xdiff.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1D317B95E040083F30A /* diff_xdiff.c */; };
+		5130C28717B95E040083F30A /* diff.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1D517B95E040083F30A /* diff.c */; };
+		5130C28817B95E040083F30A /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1D717B95E040083F30A /* errors.c */; };
+		5130C28917B95E040083F30A /* fetch.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1D817B95E040083F30A /* fetch.c */; };
+		5130C28A17B95E040083F30A /* fetchhead.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1DA17B95E040083F30A /* fetchhead.c */; };
+		5130C28B17B95E040083F30A /* filebuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1DC17B95E040083F30A /* filebuf.c */; };
+		5130C28C17B95E040083F30A /* fileops.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1DE17B95E040083F30A /* fileops.c */; };
+		5130C28D17B95E040083F30A /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1E017B95E040083F30A /* filter.c */; };
+		5130C28E17B95E040083F30A /* fnmatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1E217B95E040083F30A /* fnmatch.c */; };
+		5130C28F17B95E040083F30A /* global.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1E417B95E040083F30A /* global.c */; };
+		5130C29017B95E040083F30A /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1E617B95E040083F30A /* graph.c */; };
+		5130C29117B95E040083F30A /* hash_generic.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1E817B95E040083F30A /* hash_generic.c */; };
+		5130C29317B95E040083F30A /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1ED17B95E040083F30A /* hash.c */; };
+		5130C29417B95E040083F30A /* hashsig.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1EF17B95E040083F30A /* hashsig.c */; };
+		5130C29517B95E040083F30A /* ignore.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1F117B95E040083F30A /* ignore.c */; };
+		5130C29617B95E040083F30A /* index.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1F317B95E040083F30A /* index.c */; };
+		5130C29717B95E040083F30A /* indexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1F517B95E040083F30A /* indexer.c */; };
+		5130C29817B95E040083F30A /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1F617B95E040083F30A /* iterator.c */; };
+		5130C29917B95E040083F30A /* merge_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1FA17B95E040083F30A /* merge_file.c */; };
+		5130C29A17B95E040083F30A /* merge.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1FC17B95E040083F30A /* merge.c */; };
+		5130C29B17B95E040083F30A /* message.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C1FE17B95E040083F30A /* message.c */; };
+		5130C29C17B95E040083F30A /* mwindow.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C20017B95E040083F30A /* mwindow.c */; };
+		5130C29D17B95E040083F30A /* netops.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C20217B95E040083F30A /* netops.c */; };
+		5130C29E17B95E040083F30A /* notes.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C20417B95E040083F30A /* notes.c */; };
+		5130C29F17B95E040083F30A /* object_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C20617B95E040083F30A /* object_api.c */; };
+		5130C2A017B95E040083F30A /* object.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C20717B95E040083F30A /* object.c */; };
+		5130C2A117B95E040083F30A /* odb_loose.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C20917B95E040083F30A /* odb_loose.c */; };
+		5130C2A217B95E040083F30A /* odb_pack.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C20A17B95E040083F30A /* odb_pack.c */; };
+		5130C2A317B95E040083F30A /* odb.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C20B17B95E040083F30A /* odb.c */; };
+		5130C2A417B95E040083F30A /* oid.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C20E17B95E040083F30A /* oid.c */; };
+		5130C2A517B95E040083F30A /* pack-objects.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C21117B95E040083F30A /* pack-objects.c */; };
+		5130C2A617B95E040083F30A /* pack.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C21317B95E040083F30A /* pack.c */; };
+		5130C2A717B95E040083F30A /* path.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C21517B95E040083F30A /* path.c */; };
+		5130C2A817B95E040083F30A /* pathspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C21717B95E040083F30A /* pathspec.c */; };
+		5130C2A917B95E040083F30A /* pool.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C21917B95E040083F30A /* pool.c */; };
+		5130C2AA17B95E040083F30A /* posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C21B17B95E040083F30A /* posix.c */; };
+		5130C2AB17B95E040083F30A /* pqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C21D17B95E040083F30A /* pqueue.c */; };
+		5130C2AC17B95E040083F30A /* push.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C21F17B95E040083F30A /* push.c */; };
+		5130C2AD17B95E040083F30A /* refdb_fs.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C22117B95E040083F30A /* refdb_fs.c */; };
+		5130C2AE17B95E040083F30A /* refdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C22317B95E040083F30A /* refdb.c */; };
+		5130C2AF17B95E040083F30A /* reflog.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C22517B95E040083F30A /* reflog.c */; };
+		5130C2B017B95E040083F30A /* refs.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C22717B95E040083F30A /* refs.c */; };
+		5130C2B117B95E040083F30A /* refspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C22917B95E040083F30A /* refspec.c */; };
+		5130C2B217B95E040083F30A /* remote.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C22B17B95E040083F30A /* remote.c */; };
+		5130C2B317B95E040083F30A /* repository.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C22E17B95E040083F30A /* repository.c */; };
+		5130C2B417B95E040083F30A /* reset.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C23017B95E040083F30A /* reset.c */; };
+		5130C2B517B95E040083F30A /* revparse.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C23117B95E040083F30A /* revparse.c */; };
+		5130C2B617B95E040083F30A /* revwalk.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C23217B95E040083F30A /* revwalk.c */; };
+		5130C2B717B95E040083F30A /* sha1_lookup.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C23417B95E040083F30A /* sha1_lookup.c */; };
+		5130C2B817B95E040083F30A /* signature.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C23617B95E040083F30A /* signature.c */; };
+		5130C2B917B95E040083F30A /* stash.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C23817B95E040083F30A /* stash.c */; };
+		5130C2BA17B95E040083F30A /* status.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C23917B95E040083F30A /* status.c */; };
+		5130C2BB17B95E040083F30A /* submodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C23C17B95E040083F30A /* submodule.c */; };
+		5130C2BC17B95E040083F30A /* tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C23E17B95E040083F30A /* tag.c */; };
+		5130C2BD17B95E040083F30A /* thread-utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24017B95E040083F30A /* thread-utils.c */; };
+		5130C2BE17B95E040083F30A /* trace.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24217B95E040083F30A /* trace.c */; };
+		5130C2BF17B95E040083F30A /* transport.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24417B95E040083F30A /* transport.c */; };
+		5130C2C017B95E040083F30A /* cred.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24617B95E040083F30A /* cred.c */; };
+		5130C2C117B95E040083F30A /* cred_helpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24717B95E040083F30A /* cred_helpers.c */; };
+		5130C2C217B95E040083F30A /* git.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24817B95E040083F30A /* git.c */; };
+		5130C2C317B95E040083F30A /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24917B95E040083F30A /* http.c */; };
+		5130C2C417B95E040083F30A /* local.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24A17B95E040083F30A /* local.c */; };
+		5130C2C517B95E040083F30A /* smart.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24B17B95E040083F30A /* smart.c */; };
+		5130C2C617B95E040083F30A /* smart_pkt.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24D17B95E040083F30A /* smart_pkt.c */; };
+		5130C2C717B95E040083F30A /* smart_protocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24E17B95E040083F30A /* smart_protocol.c */; };
+		5130C2C817B95E040083F30A /* ssh.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C24F17B95E040083F30A /* ssh.c */; };
+		5130C2C917B95E040083F30A /* winhttp.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C25017B95E040083F30A /* winhttp.c */; };
+		5130C2CA17B95E040083F30A /* tree-cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C25117B95E040083F30A /* tree-cache.c */; };
+		5130C2CB17B95E040083F30A /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C25317B95E040083F30A /* tree.c */; };
+		5130C2CC17B95E040083F30A /* tsort.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C25517B95E040083F30A /* tsort.c */; };
+		5130C2CD17B95E040083F30A /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C25717B95E040083F30A /* map.c */; };
+		5130C2CE17B95E040083F30A /* realpath.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C25917B95E040083F30A /* realpath.c */; };
+		5130C2CF17B95E040083F30A /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C25A17B95E040083F30A /* util.c */; };
+		5130C2D017B95E040083F30A /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C25C17B95E040083F30A /* vector.c */; };
+		5130C2D117B95E040083F30A /* xdiffi.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26017B95E040083F30A /* xdiffi.c */; };
+		5130C2D217B95E040083F30A /* xemit.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26217B95E040083F30A /* xemit.c */; };
+		5130C2D317B95E040083F30A /* xhistogram.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26417B95E040083F30A /* xhistogram.c */; };
+		5130C2D417B95E040083F30A /* xmerge.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26717B95E040083F30A /* xmerge.c */; };
+		5130C2D517B95E040083F30A /* xpatience.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26817B95E040083F30A /* xpatience.c */; };
+		5130C2D617B95E040083F30A /* xprepare.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26917B95E040083F30A /* xprepare.c */; };
+		5130C2D717B95E040083F30A /* xutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26C17B95E040083F30A /* xutils.c */; };
+		5130C2DB17B95E690083F30A /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C2D917B95E690083F30A /* http_parser.c */; };
+		5174F1BB17B6921100ACF06B /* libObjectiveGit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174F1BA17B68EA700ACF06B /* libObjectiveGit-iOS.a */; };
+		5174F1C217B69A9500ACF06B /* GitCloneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5174F1C117B69A9500ACF06B /* GitCloneViewController.m */; };
+		5174F1C417B8077200ACF06B /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174F1C317B8077200ACF06B /* libz.1.2.5.dylib */; };
 		518FD74E17AE9FC300A33FAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518FD74D17AE9FC300A33FAE /* UIKit.framework */; };
 		518FD75017AE9FC300A33FAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518FD74F17AE9FC300A33FAE /* Foundation.framework */; };
 		518FD75217AE9FC300A33FAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518FD75117AE9FC300A33FAE /* CoreGraphics.framework */; };
@@ -23,7 +132,6 @@
 		518FD77417AE9FC300A33FAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518FD74F17AE9FC300A33FAE /* Foundation.framework */; };
 		518FD77C17AE9FC300A33FAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 518FD77A17AE9FC300A33FAE /* InfoPlist.strings */; };
 		518FD77F17AE9FC300A33FAE /* yomiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518FD77E17AE9FC300A33FAE /* yomiTests.m */; };
-		518FDAAF17AEB66E00A33FAE /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518FDAAE17AEB66E00A33FAE /* ObjectiveGit.framework */; };
 		518FDAB217AEB70800A33FAE /* SearchGithubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518FDAB117AEB70800A33FAE /* SearchGithubViewController.m */; };
 		51AA864817B21DC100141CBF /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA864717B21DC100141CBF /* CenterViewController.m */; };
 		51AA864B17B21DE100141CBF /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA864A17B21DE100141CBF /* MainMenuViewController.m */; };
@@ -84,10 +192,30 @@
 		51AA86BD17B2B80600141CBF /* repo32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AA86BB17B2B80500141CBF /* repo32@2x.png */; };
 		51AA86BE17B2B80600141CBF /* white-repo32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AA86BC17B2B80500141CBF /* white-repo32@2x.png */; };
 		51AA86C017B2BD2100141CBF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AA86BF17B2BD2100141CBF /* icon@2x.png */; };
-		51AA86C217B2BD5000141CBF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AA86C117B2BD5000141CBF /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5174F1B517B68EA700ACF06B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = ObjectiveGit;
+		};
+		5174F1B717B68EA700ACF06B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F05A6B16011E5400B7AD1D;
+			remoteInfo = ObjectiveGitTests;
+		};
+		5174F1B917B68EA700ACF06B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04DB4645133AB57600D9C624;
+			remoteInfo = "ObjectiveGit-iOS";
+		};
 		518FD77517AE9FC300A33FAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 518FD74217AE9FC300A33FAE /* Project object */;
@@ -98,6 +226,208 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5130C1A417B95E040083F30A /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = array.h; path = "objective-git/libgit2/src/array.h"; sourceTree = "<group>"; };
+		5130C1A517B95E040083F30A /* attr_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = attr_file.c; path = "objective-git/libgit2/src/attr_file.c"; sourceTree = "<group>"; };
+		5130C1A617B95E040083F30A /* attr_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = attr_file.h; path = "objective-git/libgit2/src/attr_file.h"; sourceTree = "<group>"; };
+		5130C1A717B95E040083F30A /* attr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = attr.c; path = "objective-git/libgit2/src/attr.c"; sourceTree = "<group>"; };
+		5130C1A817B95E040083F30A /* attr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = attr.h; path = "objective-git/libgit2/src/attr.h"; sourceTree = "<group>"; };
+		5130C1A917B95E040083F30A /* attrcache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = attrcache.h; path = "objective-git/libgit2/src/attrcache.h"; sourceTree = "<group>"; };
+		5130C1AA17B95E040083F30A /* blob.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = blob.c; path = "objective-git/libgit2/src/blob.c"; sourceTree = "<group>"; };
+		5130C1AB17B95E040083F30A /* blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blob.h; path = "objective-git/libgit2/src/blob.h"; sourceTree = "<group>"; };
+		5130C1AC17B95E040083F30A /* branch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = branch.c; path = "objective-git/libgit2/src/branch.c"; sourceTree = "<group>"; };
+		5130C1AD17B95E040083F30A /* branch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = branch.h; path = "objective-git/libgit2/src/branch.h"; sourceTree = "<group>"; };
+		5130C1AE17B95E040083F30A /* bswap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bswap.h; path = "objective-git/libgit2/src/bswap.h"; sourceTree = "<group>"; };
+		5130C1AF17B95E040083F30A /* buf_text.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buf_text.c; path = "objective-git/libgit2/src/buf_text.c"; sourceTree = "<group>"; };
+		5130C1B017B95E040083F30A /* buf_text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buf_text.h; path = "objective-git/libgit2/src/buf_text.h"; sourceTree = "<group>"; };
+		5130C1B117B95E040083F30A /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = "objective-git/libgit2/src/buffer.c"; sourceTree = "<group>"; };
+		5130C1B217B95E040083F30A /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "objective-git/libgit2/src/buffer.h"; sourceTree = "<group>"; };
+		5130C1B317B95E040083F30A /* cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cache.c; path = "objective-git/libgit2/src/cache.c"; sourceTree = "<group>"; };
+		5130C1B417B95E040083F30A /* cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cache.h; path = "objective-git/libgit2/src/cache.h"; sourceTree = "<group>"; };
+		5130C1B517B95E040083F30A /* cc-compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "cc-compat.h"; path = "objective-git/libgit2/src/cc-compat.h"; sourceTree = "<group>"; };
+		5130C1B617B95E040083F30A /* checkout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = checkout.c; path = "objective-git/libgit2/src/checkout.c"; sourceTree = "<group>"; };
+		5130C1B717B95E040083F30A /* checkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = checkout.h; path = "objective-git/libgit2/src/checkout.h"; sourceTree = "<group>"; };
+		5130C1B817B95E040083F30A /* clone.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = clone.c; path = "objective-git/libgit2/src/clone.c"; sourceTree = "<group>"; };
+		5130C1B917B95E040083F30A /* commit_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = commit_list.c; path = "objective-git/libgit2/src/commit_list.c"; sourceTree = "<group>"; };
+		5130C1BA17B95E040083F30A /* commit_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = commit_list.h; path = "objective-git/libgit2/src/commit_list.h"; sourceTree = "<group>"; };
+		5130C1BB17B95E040083F30A /* commit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = commit.c; path = "objective-git/libgit2/src/commit.c"; sourceTree = "<group>"; };
+		5130C1BC17B95E040083F30A /* commit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = commit.h; path = "objective-git/libgit2/src/commit.h"; sourceTree = "<group>"; };
+		5130C1BD17B95E040083F30A /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = "objective-git/libgit2/src/common.h"; sourceTree = "<group>"; };
+		5130C1BE17B95E040083F30A /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = compress.c; path = "objective-git/libgit2/src/compress.c"; sourceTree = "<group>"; };
+		5130C1BF17B95E040083F30A /* compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = compress.h; path = "objective-git/libgit2/src/compress.h"; sourceTree = "<group>"; };
+		5130C1C017B95E040083F30A /* config_cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = config_cache.c; path = "objective-git/libgit2/src/config_cache.c"; sourceTree = "<group>"; };
+		5130C1C117B95E040083F30A /* config_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = config_file.c; path = "objective-git/libgit2/src/config_file.c"; sourceTree = "<group>"; };
+		5130C1C217B95E040083F30A /* config_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config_file.h; path = "objective-git/libgit2/src/config_file.h"; sourceTree = "<group>"; };
+		5130C1C317B95E040083F30A /* config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = config.c; path = "objective-git/libgit2/src/config.c"; sourceTree = "<group>"; };
+		5130C1C417B95E040083F30A /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "objective-git/libgit2/src/config.h"; sourceTree = "<group>"; };
+		5130C1C517B95E040083F30A /* crlf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crlf.c; path = "objective-git/libgit2/src/crlf.c"; sourceTree = "<group>"; };
+		5130C1C617B95E040083F30A /* date.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = date.c; path = "objective-git/libgit2/src/date.c"; sourceTree = "<group>"; };
+		5130C1C717B95E040083F30A /* delta-apply.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "delta-apply.c"; path = "objective-git/libgit2/src/delta-apply.c"; sourceTree = "<group>"; };
+		5130C1C817B95E040083F30A /* delta-apply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "delta-apply.h"; path = "objective-git/libgit2/src/delta-apply.h"; sourceTree = "<group>"; };
+		5130C1C917B95E040083F30A /* delta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = delta.c; path = "objective-git/libgit2/src/delta.c"; sourceTree = "<group>"; };
+		5130C1CA17B95E040083F30A /* delta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = delta.h; path = "objective-git/libgit2/src/delta.h"; sourceTree = "<group>"; };
+		5130C1CB17B95E040083F30A /* diff_driver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = diff_driver.c; path = "objective-git/libgit2/src/diff_driver.c"; sourceTree = "<group>"; };
+		5130C1CC17B95E040083F30A /* diff_driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = diff_driver.h; path = "objective-git/libgit2/src/diff_driver.h"; sourceTree = "<group>"; };
+		5130C1CD17B95E040083F30A /* diff_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = diff_file.c; path = "objective-git/libgit2/src/diff_file.c"; sourceTree = "<group>"; };
+		5130C1CE17B95E040083F30A /* diff_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = diff_file.h; path = "objective-git/libgit2/src/diff_file.h"; sourceTree = "<group>"; };
+		5130C1CF17B95E040083F30A /* diff_patch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = diff_patch.c; path = "objective-git/libgit2/src/diff_patch.c"; sourceTree = "<group>"; };
+		5130C1D017B95E040083F30A /* diff_patch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = diff_patch.h; path = "objective-git/libgit2/src/diff_patch.h"; sourceTree = "<group>"; };
+		5130C1D117B95E040083F30A /* diff_print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = diff_print.c; path = "objective-git/libgit2/src/diff_print.c"; sourceTree = "<group>"; };
+		5130C1D217B95E040083F30A /* diff_tform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = diff_tform.c; path = "objective-git/libgit2/src/diff_tform.c"; sourceTree = "<group>"; };
+		5130C1D317B95E040083F30A /* diff_xdiff.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = diff_xdiff.c; path = "objective-git/libgit2/src/diff_xdiff.c"; sourceTree = "<group>"; };
+		5130C1D417B95E040083F30A /* diff_xdiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = diff_xdiff.h; path = "objective-git/libgit2/src/diff_xdiff.h"; sourceTree = "<group>"; };
+		5130C1D517B95E040083F30A /* diff.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = diff.c; path = "objective-git/libgit2/src/diff.c"; sourceTree = "<group>"; };
+		5130C1D617B95E040083F30A /* diff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = diff.h; path = "objective-git/libgit2/src/diff.h"; sourceTree = "<group>"; };
+		5130C1D717B95E040083F30A /* errors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = errors.c; path = "objective-git/libgit2/src/errors.c"; sourceTree = "<group>"; };
+		5130C1D817B95E040083F30A /* fetch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fetch.c; path = "objective-git/libgit2/src/fetch.c"; sourceTree = "<group>"; };
+		5130C1D917B95E040083F30A /* fetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fetch.h; path = "objective-git/libgit2/src/fetch.h"; sourceTree = "<group>"; };
+		5130C1DA17B95E040083F30A /* fetchhead.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fetchhead.c; path = "objective-git/libgit2/src/fetchhead.c"; sourceTree = "<group>"; };
+		5130C1DB17B95E040083F30A /* fetchhead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fetchhead.h; path = "objective-git/libgit2/src/fetchhead.h"; sourceTree = "<group>"; };
+		5130C1DC17B95E040083F30A /* filebuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filebuf.c; path = "objective-git/libgit2/src/filebuf.c"; sourceTree = "<group>"; };
+		5130C1DD17B95E040083F30A /* filebuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filebuf.h; path = "objective-git/libgit2/src/filebuf.h"; sourceTree = "<group>"; };
+		5130C1DE17B95E040083F30A /* fileops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fileops.c; path = "objective-git/libgit2/src/fileops.c"; sourceTree = "<group>"; };
+		5130C1DF17B95E040083F30A /* fileops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fileops.h; path = "objective-git/libgit2/src/fileops.h"; sourceTree = "<group>"; };
+		5130C1E017B95E040083F30A /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter.c; path = "objective-git/libgit2/src/filter.c"; sourceTree = "<group>"; };
+		5130C1E117B95E040083F30A /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter.h; path = "objective-git/libgit2/src/filter.h"; sourceTree = "<group>"; };
+		5130C1E217B95E040083F30A /* fnmatch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fnmatch.c; path = "objective-git/libgit2/src/fnmatch.c"; sourceTree = "<group>"; };
+		5130C1E317B95E040083F30A /* fnmatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fnmatch.h; path = "objective-git/libgit2/src/fnmatch.h"; sourceTree = "<group>"; };
+		5130C1E417B95E040083F30A /* global.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = global.c; path = "objective-git/libgit2/src/global.c"; sourceTree = "<group>"; };
+		5130C1E517B95E040083F30A /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = global.h; path = "objective-git/libgit2/src/global.h"; sourceTree = "<group>"; };
+		5130C1E617B95E040083F30A /* graph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = graph.c; path = "objective-git/libgit2/src/graph.c"; sourceTree = "<group>"; };
+		5130C1E817B95E040083F30A /* hash_generic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash_generic.c; sourceTree = "<group>"; };
+		5130C1E917B95E040083F30A /* hash_generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_generic.h; sourceTree = "<group>"; };
+		5130C1EA17B95E040083F30A /* hash_openssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_openssl.h; sourceTree = "<group>"; };
+		5130C1ED17B95E040083F30A /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hash.c; path = "objective-git/libgit2/src/hash.c"; sourceTree = "<group>"; };
+		5130C1EE17B95E040083F30A /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hash.h; path = "objective-git/libgit2/src/hash.h"; sourceTree = "<group>"; };
+		5130C1EF17B95E040083F30A /* hashsig.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hashsig.c; path = "objective-git/libgit2/src/hashsig.c"; sourceTree = "<group>"; };
+		5130C1F017B95E040083F30A /* hashsig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hashsig.h; path = "objective-git/libgit2/src/hashsig.h"; sourceTree = "<group>"; };
+		5130C1F117B95E040083F30A /* ignore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ignore.c; path = "objective-git/libgit2/src/ignore.c"; sourceTree = "<group>"; };
+		5130C1F217B95E040083F30A /* ignore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ignore.h; path = "objective-git/libgit2/src/ignore.h"; sourceTree = "<group>"; };
+		5130C1F317B95E040083F30A /* index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = index.c; path = "objective-git/libgit2/src/index.c"; sourceTree = "<group>"; };
+		5130C1F417B95E040083F30A /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = index.h; path = "objective-git/libgit2/src/index.h"; sourceTree = "<group>"; };
+		5130C1F517B95E040083F30A /* indexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = indexer.c; path = "objective-git/libgit2/src/indexer.c"; sourceTree = "<group>"; };
+		5130C1F617B95E040083F30A /* iterator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = iterator.c; path = "objective-git/libgit2/src/iterator.c"; sourceTree = "<group>"; };
+		5130C1F717B95E040083F30A /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = "objective-git/libgit2/src/iterator.h"; sourceTree = "<group>"; };
+		5130C1F817B95E040083F30A /* khash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = khash.h; path = "objective-git/libgit2/src/khash.h"; sourceTree = "<group>"; };
+		5130C1F917B95E040083F30A /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map.h; path = "objective-git/libgit2/src/map.h"; sourceTree = "<group>"; };
+		5130C1FA17B95E040083F30A /* merge_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = merge_file.c; path = "objective-git/libgit2/src/merge_file.c"; sourceTree = "<group>"; };
+		5130C1FB17B95E040083F30A /* merge_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = merge_file.h; path = "objective-git/libgit2/src/merge_file.h"; sourceTree = "<group>"; };
+		5130C1FC17B95E040083F30A /* merge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = merge.c; path = "objective-git/libgit2/src/merge.c"; sourceTree = "<group>"; };
+		5130C1FD17B95E040083F30A /* merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = merge.h; path = "objective-git/libgit2/src/merge.h"; sourceTree = "<group>"; };
+		5130C1FE17B95E040083F30A /* message.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = message.c; path = "objective-git/libgit2/src/message.c"; sourceTree = "<group>"; };
+		5130C1FF17B95E040083F30A /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = message.h; path = "objective-git/libgit2/src/message.h"; sourceTree = "<group>"; };
+		5130C20017B95E040083F30A /* mwindow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mwindow.c; path = "objective-git/libgit2/src/mwindow.c"; sourceTree = "<group>"; };
+		5130C20117B95E040083F30A /* mwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mwindow.h; path = "objective-git/libgit2/src/mwindow.h"; sourceTree = "<group>"; };
+		5130C20217B95E040083F30A /* netops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = netops.c; path = "objective-git/libgit2/src/netops.c"; sourceTree = "<group>"; };
+		5130C20317B95E040083F30A /* netops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = netops.h; path = "objective-git/libgit2/src/netops.h"; sourceTree = "<group>"; };
+		5130C20417B95E040083F30A /* notes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = notes.c; path = "objective-git/libgit2/src/notes.c"; sourceTree = "<group>"; };
+		5130C20517B95E040083F30A /* notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = notes.h; path = "objective-git/libgit2/src/notes.h"; sourceTree = "<group>"; };
+		5130C20617B95E040083F30A /* object_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = object_api.c; path = "objective-git/libgit2/src/object_api.c"; sourceTree = "<group>"; };
+		5130C20717B95E040083F30A /* object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = object.c; path = "objective-git/libgit2/src/object.c"; sourceTree = "<group>"; };
+		5130C20817B95E040083F30A /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object.h; path = "objective-git/libgit2/src/object.h"; sourceTree = "<group>"; };
+		5130C20917B95E040083F30A /* odb_loose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = odb_loose.c; path = "objective-git/libgit2/src/odb_loose.c"; sourceTree = "<group>"; };
+		5130C20A17B95E040083F30A /* odb_pack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = odb_pack.c; path = "objective-git/libgit2/src/odb_pack.c"; sourceTree = "<group>"; };
+		5130C20B17B95E040083F30A /* odb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = odb.c; path = "objective-git/libgit2/src/odb.c"; sourceTree = "<group>"; };
+		5130C20C17B95E040083F30A /* odb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = odb.h; path = "objective-git/libgit2/src/odb.h"; sourceTree = "<group>"; };
+		5130C20D17B95E040083F30A /* offmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = offmap.h; path = "objective-git/libgit2/src/offmap.h"; sourceTree = "<group>"; };
+		5130C20E17B95E040083F30A /* oid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = oid.c; path = "objective-git/libgit2/src/oid.c"; sourceTree = "<group>"; };
+		5130C20F17B95E040083F30A /* oid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oid.h; path = "objective-git/libgit2/src/oid.h"; sourceTree = "<group>"; };
+		5130C21017B95E040083F30A /* oidmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oidmap.h; path = "objective-git/libgit2/src/oidmap.h"; sourceTree = "<group>"; };
+		5130C21117B95E040083F30A /* pack-objects.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pack-objects.c"; path = "objective-git/libgit2/src/pack-objects.c"; sourceTree = "<group>"; };
+		5130C21217B95E040083F30A /* pack-objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "pack-objects.h"; path = "objective-git/libgit2/src/pack-objects.h"; sourceTree = "<group>"; };
+		5130C21317B95E040083F30A /* pack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pack.c; path = "objective-git/libgit2/src/pack.c"; sourceTree = "<group>"; };
+		5130C21417B95E040083F30A /* pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pack.h; path = "objective-git/libgit2/src/pack.h"; sourceTree = "<group>"; };
+		5130C21517B95E040083F30A /* path.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = path.c; path = "objective-git/libgit2/src/path.c"; sourceTree = "<group>"; };
+		5130C21617B95E040083F30A /* path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = path.h; path = "objective-git/libgit2/src/path.h"; sourceTree = "<group>"; };
+		5130C21717B95E040083F30A /* pathspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pathspec.c; path = "objective-git/libgit2/src/pathspec.c"; sourceTree = "<group>"; };
+		5130C21817B95E040083F30A /* pathspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pathspec.h; path = "objective-git/libgit2/src/pathspec.h"; sourceTree = "<group>"; };
+		5130C21917B95E040083F30A /* pool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pool.c; path = "objective-git/libgit2/src/pool.c"; sourceTree = "<group>"; };
+		5130C21A17B95E040083F30A /* pool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pool.h; path = "objective-git/libgit2/src/pool.h"; sourceTree = "<group>"; };
+		5130C21B17B95E040083F30A /* posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = posix.c; path = "objective-git/libgit2/src/posix.c"; sourceTree = "<group>"; };
+		5130C21C17B95E040083F30A /* posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = posix.h; path = "objective-git/libgit2/src/posix.h"; sourceTree = "<group>"; };
+		5130C21D17B95E040083F30A /* pqueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pqueue.c; path = "objective-git/libgit2/src/pqueue.c"; sourceTree = "<group>"; };
+		5130C21E17B95E040083F30A /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "objective-git/libgit2/src/pqueue.h"; sourceTree = "<group>"; };
+		5130C21F17B95E040083F30A /* push.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = push.c; path = "objective-git/libgit2/src/push.c"; sourceTree = "<group>"; };
+		5130C22017B95E040083F30A /* push.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = push.h; path = "objective-git/libgit2/src/push.h"; sourceTree = "<group>"; };
+		5130C22117B95E040083F30A /* refdb_fs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = refdb_fs.c; path = "objective-git/libgit2/src/refdb_fs.c"; sourceTree = "<group>"; };
+		5130C22217B95E040083F30A /* refdb_fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = refdb_fs.h; path = "objective-git/libgit2/src/refdb_fs.h"; sourceTree = "<group>"; };
+		5130C22317B95E040083F30A /* refdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = refdb.c; path = "objective-git/libgit2/src/refdb.c"; sourceTree = "<group>"; };
+		5130C22417B95E040083F30A /* refdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = refdb.h; path = "objective-git/libgit2/src/refdb.h"; sourceTree = "<group>"; };
+		5130C22517B95E040083F30A /* reflog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = reflog.c; path = "objective-git/libgit2/src/reflog.c"; sourceTree = "<group>"; };
+		5130C22617B95E040083F30A /* reflog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reflog.h; path = "objective-git/libgit2/src/reflog.h"; sourceTree = "<group>"; };
+		5130C22717B95E040083F30A /* refs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = refs.c; path = "objective-git/libgit2/src/refs.c"; sourceTree = "<group>"; };
+		5130C22817B95E040083F30A /* refs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = refs.h; path = "objective-git/libgit2/src/refs.h"; sourceTree = "<group>"; };
+		5130C22917B95E040083F30A /* refspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = refspec.c; path = "objective-git/libgit2/src/refspec.c"; sourceTree = "<group>"; };
+		5130C22A17B95E040083F30A /* refspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = refspec.h; path = "objective-git/libgit2/src/refspec.h"; sourceTree = "<group>"; };
+		5130C22B17B95E040083F30A /* remote.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = remote.c; path = "objective-git/libgit2/src/remote.c"; sourceTree = "<group>"; };
+		5130C22C17B95E040083F30A /* remote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = remote.h; path = "objective-git/libgit2/src/remote.h"; sourceTree = "<group>"; };
+		5130C22D17B95E040083F30A /* repo_template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = repo_template.h; path = "objective-git/libgit2/src/repo_template.h"; sourceTree = "<group>"; };
+		5130C22E17B95E040083F30A /* repository.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = repository.c; path = "objective-git/libgit2/src/repository.c"; sourceTree = "<group>"; };
+		5130C22F17B95E040083F30A /* repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = repository.h; path = "objective-git/libgit2/src/repository.h"; sourceTree = "<group>"; };
+		5130C23017B95E040083F30A /* reset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = reset.c; path = "objective-git/libgit2/src/reset.c"; sourceTree = "<group>"; };
+		5130C23117B95E040083F30A /* revparse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = revparse.c; path = "objective-git/libgit2/src/revparse.c"; sourceTree = "<group>"; };
+		5130C23217B95E040083F30A /* revwalk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = revwalk.c; path = "objective-git/libgit2/src/revwalk.c"; sourceTree = "<group>"; };
+		5130C23317B95E040083F30A /* revwalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = revwalk.h; path = "objective-git/libgit2/src/revwalk.h"; sourceTree = "<group>"; };
+		5130C23417B95E040083F30A /* sha1_lookup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1_lookup.c; path = "objective-git/libgit2/src/sha1_lookup.c"; sourceTree = "<group>"; };
+		5130C23517B95E040083F30A /* sha1_lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1_lookup.h; path = "objective-git/libgit2/src/sha1_lookup.h"; sourceTree = "<group>"; };
+		5130C23617B95E040083F30A /* signature.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = signature.c; path = "objective-git/libgit2/src/signature.c"; sourceTree = "<group>"; };
+		5130C23717B95E040083F30A /* signature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = signature.h; path = "objective-git/libgit2/src/signature.h"; sourceTree = "<group>"; };
+		5130C23817B95E040083F30A /* stash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stash.c; path = "objective-git/libgit2/src/stash.c"; sourceTree = "<group>"; };
+		5130C23917B95E040083F30A /* status.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = status.c; path = "objective-git/libgit2/src/status.c"; sourceTree = "<group>"; };
+		5130C23A17B95E040083F30A /* status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = status.h; path = "objective-git/libgit2/src/status.h"; sourceTree = "<group>"; };
+		5130C23B17B95E040083F30A /* strmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = strmap.h; path = "objective-git/libgit2/src/strmap.h"; sourceTree = "<group>"; };
+		5130C23C17B95E040083F30A /* submodule.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = submodule.c; path = "objective-git/libgit2/src/submodule.c"; sourceTree = "<group>"; };
+		5130C23D17B95E040083F30A /* submodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = submodule.h; path = "objective-git/libgit2/src/submodule.h"; sourceTree = "<group>"; };
+		5130C23E17B95E040083F30A /* tag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tag.c; path = "objective-git/libgit2/src/tag.c"; sourceTree = "<group>"; };
+		5130C23F17B95E040083F30A /* tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tag.h; path = "objective-git/libgit2/src/tag.h"; sourceTree = "<group>"; };
+		5130C24017B95E040083F30A /* thread-utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "thread-utils.c"; path = "objective-git/libgit2/src/thread-utils.c"; sourceTree = "<group>"; };
+		5130C24117B95E040083F30A /* thread-utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "thread-utils.h"; path = "objective-git/libgit2/src/thread-utils.h"; sourceTree = "<group>"; };
+		5130C24217B95E040083F30A /* trace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = trace.c; path = "objective-git/libgit2/src/trace.c"; sourceTree = "<group>"; };
+		5130C24317B95E040083F30A /* trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trace.h; path = "objective-git/libgit2/src/trace.h"; sourceTree = "<group>"; };
+		5130C24417B95E040083F30A /* transport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = transport.c; path = "objective-git/libgit2/src/transport.c"; sourceTree = "<group>"; };
+		5130C24617B95E040083F30A /* cred.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cred.c; sourceTree = "<group>"; };
+		5130C24717B95E040083F30A /* cred_helpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cred_helpers.c; sourceTree = "<group>"; };
+		5130C24817B95E040083F30A /* git.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = git.c; sourceTree = "<group>"; };
+		5130C24917B95E040083F30A /* http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http.c; sourceTree = "<group>"; };
+		5130C24A17B95E040083F30A /* local.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = local.c; sourceTree = "<group>"; };
+		5130C24B17B95E040083F30A /* smart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smart.c; sourceTree = "<group>"; };
+		5130C24C17B95E040083F30A /* smart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smart.h; sourceTree = "<group>"; };
+		5130C24D17B95E040083F30A /* smart_pkt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smart_pkt.c; sourceTree = "<group>"; };
+		5130C24E17B95E040083F30A /* smart_protocol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smart_protocol.c; sourceTree = "<group>"; };
+		5130C24F17B95E040083F30A /* ssh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssh.c; sourceTree = "<group>"; };
+		5130C25017B95E040083F30A /* winhttp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = winhttp.c; sourceTree = "<group>"; };
+		5130C25117B95E040083F30A /* tree-cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "tree-cache.c"; path = "objective-git/libgit2/src/tree-cache.c"; sourceTree = "<group>"; };
+		5130C25217B95E040083F30A /* tree-cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "tree-cache.h"; path = "objective-git/libgit2/src/tree-cache.h"; sourceTree = "<group>"; };
+		5130C25317B95E040083F30A /* tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tree.c; path = "objective-git/libgit2/src/tree.c"; sourceTree = "<group>"; };
+		5130C25417B95E040083F30A /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tree.h; path = "objective-git/libgit2/src/tree.h"; sourceTree = "<group>"; };
+		5130C25517B95E040083F30A /* tsort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsort.c; path = "objective-git/libgit2/src/tsort.c"; sourceTree = "<group>"; };
+		5130C25717B95E040083F30A /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = map.c; sourceTree = "<group>"; };
+		5130C25817B95E040083F30A /* posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = posix.h; sourceTree = "<group>"; };
+		5130C25917B95E040083F30A /* realpath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = realpath.c; sourceTree = "<group>"; };
+		5130C25A17B95E040083F30A /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = "objective-git/libgit2/src/util.c"; sourceTree = "<group>"; };
+		5130C25B17B95E040083F30A /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = "objective-git/libgit2/src/util.h"; sourceTree = "<group>"; };
+		5130C25C17B95E040083F30A /* vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vector.c; path = "objective-git/libgit2/src/vector.c"; sourceTree = "<group>"; };
+		5130C25D17B95E040083F30A /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector.h; path = "objective-git/libgit2/src/vector.h"; sourceTree = "<group>"; };
+		5130C25F17B95E040083F30A /* xdiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xdiff.h; sourceTree = "<group>"; };
+		5130C26017B95E040083F30A /* xdiffi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xdiffi.c; sourceTree = "<group>"; };
+		5130C26117B95E040083F30A /* xdiffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xdiffi.h; sourceTree = "<group>"; };
+		5130C26217B95E040083F30A /* xemit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xemit.c; sourceTree = "<group>"; };
+		5130C26317B95E040083F30A /* xemit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xemit.h; sourceTree = "<group>"; };
+		5130C26417B95E040083F30A /* xhistogram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xhistogram.c; sourceTree = "<group>"; };
+		5130C26517B95E040083F30A /* xinclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinclude.h; sourceTree = "<group>"; };
+		5130C26617B95E040083F30A /* xmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmacros.h; sourceTree = "<group>"; };
+		5130C26717B95E040083F30A /* xmerge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xmerge.c; sourceTree = "<group>"; };
+		5130C26817B95E040083F30A /* xpatience.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xpatience.c; sourceTree = "<group>"; };
+		5130C26917B95E040083F30A /* xprepare.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xprepare.c; sourceTree = "<group>"; };
+		5130C26A17B95E040083F30A /* xprepare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xprepare.h; sourceTree = "<group>"; };
+		5130C26B17B95E040083F30A /* xtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xtypes.h; sourceTree = "<group>"; };
+		5130C26C17B95E040083F30A /* xutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xutils.c; sourceTree = "<group>"; };
+		5130C26D17B95E040083F30A /* xutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xutils.h; sourceTree = "<group>"; };
+		5130C2D917B95E690083F30A /* http_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = http_parser.c; path = "objective-git/libgit2/deps/http-parser/http_parser.c"; sourceTree = "<group>"; };
+		5130C2DA17B95E690083F30A /* http_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = http_parser.h; path = "objective-git/libgit2/deps/http-parser/http_parser.h"; sourceTree = "<group>"; };
+		5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveGitFramework.xcodeproj; path = "objective-git/ObjectiveGitFramework.xcodeproj"; sourceTree = "<group>"; };
+		5174F1C017B69A9500ACF06B /* GitCloneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitCloneViewController.h; sourceTree = "<group>"; };
+		5174F1C117B69A9500ACF06B /* GitCloneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitCloneViewController.m; sourceTree = "<group>"; };
+		5174F1C317B8077200ACF06B /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		518FD74A17AE9FC300A33FAE /* yomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518FD74D17AE9FC300A33FAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		518FD74F17AE9FC300A33FAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,7 +450,6 @@
 		518FD77B17AE9FC300A33FAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		518FD77D17AE9FC300A33FAE /* yomiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yomiTests.h; sourceTree = "<group>"; };
 		518FD77E17AE9FC300A33FAE /* yomiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yomiTests.m; sourceTree = "<group>"; };
-		518FDAAE17AEB66E00A33FAE /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Frameworks/ObjectiveGit.framework; sourceTree = "<group>"; };
 		518FDAB017AEB70800A33FAE /* SearchGithubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchGithubViewController.h; sourceTree = "<group>"; };
 		518FDAB117AEB70800A33FAE /* SearchGithubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchGithubViewController.m; sourceTree = "<group>"; };
 		51AA864617B21DC100141CBF /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
@@ -186,7 +515,6 @@
 		51AA86BB17B2B80500141CBF /* repo32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repo32@2x.png"; sourceTree = "<group>"; };
 		51AA86BC17B2B80500141CBF /* white-repo32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-repo32@2x.png"; sourceTree = "<group>"; };
 		51AA86BF17B2BD2100141CBF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		51AA86C117B2BD5000141CBF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,10 +522,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5174F1C417B8077200ACF06B /* libz.1.2.5.dylib in Frameworks */,
+				5174F1BB17B6921100ACF06B /* libObjectiveGit-iOS.a in Frameworks */,
 				518FD74E17AE9FC300A33FAE /* UIKit.framework in Frameworks */,
 				518FD75017AE9FC300A33FAE /* Foundation.framework in Frameworks */,
 				518FD75217AE9FC300A33FAE /* CoreGraphics.framework in Frameworks */,
-				518FDAAF17AEB66E00A33FAE /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,10 +543,267 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5130C1A317B95DD90083F30A /* libgit2 */ = {
+			isa = PBXGroup;
+			children = (
+				5130C1A417B95E040083F30A /* array.h */,
+				5130C1A517B95E040083F30A /* attr_file.c */,
+				5130C1A617B95E040083F30A /* attr_file.h */,
+				5130C1A717B95E040083F30A /* attr.c */,
+				5130C1A817B95E040083F30A /* attr.h */,
+				5130C1A917B95E040083F30A /* attrcache.h */,
+				5130C1AA17B95E040083F30A /* blob.c */,
+				5130C1AB17B95E040083F30A /* blob.h */,
+				5130C1AC17B95E040083F30A /* branch.c */,
+				5130C1AD17B95E040083F30A /* branch.h */,
+				5130C1AE17B95E040083F30A /* bswap.h */,
+				5130C1AF17B95E040083F30A /* buf_text.c */,
+				5130C1B017B95E040083F30A /* buf_text.h */,
+				5130C1B117B95E040083F30A /* buffer.c */,
+				5130C1B217B95E040083F30A /* buffer.h */,
+				5130C1B317B95E040083F30A /* cache.c */,
+				5130C1B417B95E040083F30A /* cache.h */,
+				5130C1B517B95E040083F30A /* cc-compat.h */,
+				5130C1B617B95E040083F30A /* checkout.c */,
+				5130C1B717B95E040083F30A /* checkout.h */,
+				5130C1B817B95E040083F30A /* clone.c */,
+				5130C1B917B95E040083F30A /* commit_list.c */,
+				5130C1BA17B95E040083F30A /* commit_list.h */,
+				5130C1BB17B95E040083F30A /* commit.c */,
+				5130C1BC17B95E040083F30A /* commit.h */,
+				5130C1BD17B95E040083F30A /* common.h */,
+				5130C1BE17B95E040083F30A /* compress.c */,
+				5130C1BF17B95E040083F30A /* compress.h */,
+				5130C1C017B95E040083F30A /* config_cache.c */,
+				5130C1C117B95E040083F30A /* config_file.c */,
+				5130C1C217B95E040083F30A /* config_file.h */,
+				5130C1C317B95E040083F30A /* config.c */,
+				5130C1C417B95E040083F30A /* config.h */,
+				5130C1C517B95E040083F30A /* crlf.c */,
+				5130C1C617B95E040083F30A /* date.c */,
+				5130C1C717B95E040083F30A /* delta-apply.c */,
+				5130C1C817B95E040083F30A /* delta-apply.h */,
+				5130C1C917B95E040083F30A /* delta.c */,
+				5130C1CA17B95E040083F30A /* delta.h */,
+				5130C1CB17B95E040083F30A /* diff_driver.c */,
+				5130C1CC17B95E040083F30A /* diff_driver.h */,
+				5130C1CD17B95E040083F30A /* diff_file.c */,
+				5130C1CE17B95E040083F30A /* diff_file.h */,
+				5130C1CF17B95E040083F30A /* diff_patch.c */,
+				5130C1D017B95E040083F30A /* diff_patch.h */,
+				5130C1D117B95E040083F30A /* diff_print.c */,
+				5130C1D217B95E040083F30A /* diff_tform.c */,
+				5130C1D317B95E040083F30A /* diff_xdiff.c */,
+				5130C1D417B95E040083F30A /* diff_xdiff.h */,
+				5130C1D517B95E040083F30A /* diff.c */,
+				5130C1D617B95E040083F30A /* diff.h */,
+				5130C1D717B95E040083F30A /* errors.c */,
+				5130C1D817B95E040083F30A /* fetch.c */,
+				5130C1D917B95E040083F30A /* fetch.h */,
+				5130C1DA17B95E040083F30A /* fetchhead.c */,
+				5130C1DB17B95E040083F30A /* fetchhead.h */,
+				5130C1DC17B95E040083F30A /* filebuf.c */,
+				5130C1DD17B95E040083F30A /* filebuf.h */,
+				5130C1DE17B95E040083F30A /* fileops.c */,
+				5130C1DF17B95E040083F30A /* fileops.h */,
+				5130C1E017B95E040083F30A /* filter.c */,
+				5130C1E117B95E040083F30A /* filter.h */,
+				5130C1E217B95E040083F30A /* fnmatch.c */,
+				5130C1E317B95E040083F30A /* fnmatch.h */,
+				5130C1E417B95E040083F30A /* global.c */,
+				5130C1E517B95E040083F30A /* global.h */,
+				5130C1E617B95E040083F30A /* graph.c */,
+				5130C1E717B95E040083F30A /* hash */,
+				5130C1ED17B95E040083F30A /* hash.c */,
+				5130C1EE17B95E040083F30A /* hash.h */,
+				5130C1EF17B95E040083F30A /* hashsig.c */,
+				5130C1F017B95E040083F30A /* hashsig.h */,
+				5130C1F117B95E040083F30A /* ignore.c */,
+				5130C1F217B95E040083F30A /* ignore.h */,
+				5130C1F317B95E040083F30A /* index.c */,
+				5130C1F417B95E040083F30A /* index.h */,
+				5130C1F517B95E040083F30A /* indexer.c */,
+				5130C1F617B95E040083F30A /* iterator.c */,
+				5130C1F717B95E040083F30A /* iterator.h */,
+				5130C1F817B95E040083F30A /* khash.h */,
+				5130C1F917B95E040083F30A /* map.h */,
+				5130C1FA17B95E040083F30A /* merge_file.c */,
+				5130C1FB17B95E040083F30A /* merge_file.h */,
+				5130C1FC17B95E040083F30A /* merge.c */,
+				5130C1FD17B95E040083F30A /* merge.h */,
+				5130C1FE17B95E040083F30A /* message.c */,
+				5130C1FF17B95E040083F30A /* message.h */,
+				5130C20017B95E040083F30A /* mwindow.c */,
+				5130C20117B95E040083F30A /* mwindow.h */,
+				5130C20217B95E040083F30A /* netops.c */,
+				5130C20317B95E040083F30A /* netops.h */,
+				5130C20417B95E040083F30A /* notes.c */,
+				5130C20517B95E040083F30A /* notes.h */,
+				5130C20617B95E040083F30A /* object_api.c */,
+				5130C20717B95E040083F30A /* object.c */,
+				5130C20817B95E040083F30A /* object.h */,
+				5130C20917B95E040083F30A /* odb_loose.c */,
+				5130C20A17B95E040083F30A /* odb_pack.c */,
+				5130C20B17B95E040083F30A /* odb.c */,
+				5130C20C17B95E040083F30A /* odb.h */,
+				5130C20D17B95E040083F30A /* offmap.h */,
+				5130C20E17B95E040083F30A /* oid.c */,
+				5130C20F17B95E040083F30A /* oid.h */,
+				5130C21017B95E040083F30A /* oidmap.h */,
+				5130C21117B95E040083F30A /* pack-objects.c */,
+				5130C21217B95E040083F30A /* pack-objects.h */,
+				5130C21317B95E040083F30A /* pack.c */,
+				5130C21417B95E040083F30A /* pack.h */,
+				5130C21517B95E040083F30A /* path.c */,
+				5130C21617B95E040083F30A /* path.h */,
+				5130C21717B95E040083F30A /* pathspec.c */,
+				5130C21817B95E040083F30A /* pathspec.h */,
+				5130C21917B95E040083F30A /* pool.c */,
+				5130C21A17B95E040083F30A /* pool.h */,
+				5130C21B17B95E040083F30A /* posix.c */,
+				5130C21C17B95E040083F30A /* posix.h */,
+				5130C21D17B95E040083F30A /* pqueue.c */,
+				5130C21E17B95E040083F30A /* pqueue.h */,
+				5130C21F17B95E040083F30A /* push.c */,
+				5130C22017B95E040083F30A /* push.h */,
+				5130C22117B95E040083F30A /* refdb_fs.c */,
+				5130C22217B95E040083F30A /* refdb_fs.h */,
+				5130C22317B95E040083F30A /* refdb.c */,
+				5130C22417B95E040083F30A /* refdb.h */,
+				5130C22517B95E040083F30A /* reflog.c */,
+				5130C22617B95E040083F30A /* reflog.h */,
+				5130C22717B95E040083F30A /* refs.c */,
+				5130C22817B95E040083F30A /* refs.h */,
+				5130C22917B95E040083F30A /* refspec.c */,
+				5130C22A17B95E040083F30A /* refspec.h */,
+				5130C22B17B95E040083F30A /* remote.c */,
+				5130C22C17B95E040083F30A /* remote.h */,
+				5130C22D17B95E040083F30A /* repo_template.h */,
+				5130C22E17B95E040083F30A /* repository.c */,
+				5130C22F17B95E040083F30A /* repository.h */,
+				5130C23017B95E040083F30A /* reset.c */,
+				5130C23117B95E040083F30A /* revparse.c */,
+				5130C23217B95E040083F30A /* revwalk.c */,
+				5130C23317B95E040083F30A /* revwalk.h */,
+				5130C23417B95E040083F30A /* sha1_lookup.c */,
+				5130C23517B95E040083F30A /* sha1_lookup.h */,
+				5130C23617B95E040083F30A /* signature.c */,
+				5130C23717B95E040083F30A /* signature.h */,
+				5130C23817B95E040083F30A /* stash.c */,
+				5130C23917B95E040083F30A /* status.c */,
+				5130C23A17B95E040083F30A /* status.h */,
+				5130C23B17B95E040083F30A /* strmap.h */,
+				5130C23C17B95E040083F30A /* submodule.c */,
+				5130C23D17B95E040083F30A /* submodule.h */,
+				5130C23E17B95E040083F30A /* tag.c */,
+				5130C23F17B95E040083F30A /* tag.h */,
+				5130C24017B95E040083F30A /* thread-utils.c */,
+				5130C24117B95E040083F30A /* thread-utils.h */,
+				5130C24217B95E040083F30A /* trace.c */,
+				5130C24317B95E040083F30A /* trace.h */,
+				5130C24417B95E040083F30A /* transport.c */,
+				5130C24517B95E040083F30A /* transports */,
+				5130C25117B95E040083F30A /* tree-cache.c */,
+				5130C25217B95E040083F30A /* tree-cache.h */,
+				5130C25317B95E040083F30A /* tree.c */,
+				5130C25417B95E040083F30A /* tree.h */,
+				5130C25517B95E040083F30A /* tsort.c */,
+				5130C25617B95E040083F30A /* unix */,
+				5130C25A17B95E040083F30A /* util.c */,
+				5130C25B17B95E040083F30A /* util.h */,
+				5130C25C17B95E040083F30A /* vector.c */,
+				5130C25D17B95E040083F30A /* vector.h */,
+				5130C25E17B95E040083F30A /* xdiff */,
+			);
+			name = libgit2;
+			sourceTree = "<group>";
+		};
+		5130C1E717B95E040083F30A /* hash */ = {
+			isa = PBXGroup;
+			children = (
+				5130C1E817B95E040083F30A /* hash_generic.c */,
+				5130C1E917B95E040083F30A /* hash_generic.h */,
+				5130C1EA17B95E040083F30A /* hash_openssl.h */,
+			);
+			name = hash;
+			path = "objective-git/libgit2/src/hash";
+			sourceTree = "<group>";
+		};
+		5130C24517B95E040083F30A /* transports */ = {
+			isa = PBXGroup;
+			children = (
+				5130C24617B95E040083F30A /* cred.c */,
+				5130C24717B95E040083F30A /* cred_helpers.c */,
+				5130C24817B95E040083F30A /* git.c */,
+				5130C24917B95E040083F30A /* http.c */,
+				5130C24A17B95E040083F30A /* local.c */,
+				5130C24B17B95E040083F30A /* smart.c */,
+				5130C24C17B95E040083F30A /* smart.h */,
+				5130C24D17B95E040083F30A /* smart_pkt.c */,
+				5130C24E17B95E040083F30A /* smart_protocol.c */,
+				5130C24F17B95E040083F30A /* ssh.c */,
+				5130C25017B95E040083F30A /* winhttp.c */,
+			);
+			name = transports;
+			path = "objective-git/libgit2/src/transports";
+			sourceTree = "<group>";
+		};
+		5130C25617B95E040083F30A /* unix */ = {
+			isa = PBXGroup;
+			children = (
+				5130C25717B95E040083F30A /* map.c */,
+				5130C25817B95E040083F30A /* posix.h */,
+				5130C25917B95E040083F30A /* realpath.c */,
+			);
+			name = unix;
+			path = "objective-git/libgit2/src/unix";
+			sourceTree = "<group>";
+		};
+		5130C25E17B95E040083F30A /* xdiff */ = {
+			isa = PBXGroup;
+			children = (
+				5130C25F17B95E040083F30A /* xdiff.h */,
+				5130C26017B95E040083F30A /* xdiffi.c */,
+				5130C26117B95E040083F30A /* xdiffi.h */,
+				5130C26217B95E040083F30A /* xemit.c */,
+				5130C26317B95E040083F30A /* xemit.h */,
+				5130C26417B95E040083F30A /* xhistogram.c */,
+				5130C26517B95E040083F30A /* xinclude.h */,
+				5130C26617B95E040083F30A /* xmacros.h */,
+				5130C26717B95E040083F30A /* xmerge.c */,
+				5130C26817B95E040083F30A /* xpatience.c */,
+				5130C26917B95E040083F30A /* xprepare.c */,
+				5130C26A17B95E040083F30A /* xprepare.h */,
+				5130C26B17B95E040083F30A /* xtypes.h */,
+				5130C26C17B95E040083F30A /* xutils.c */,
+				5130C26D17B95E040083F30A /* xutils.h */,
+			);
+			name = xdiff;
+			path = "objective-git/libgit2/src/xdiff";
+			sourceTree = "<group>";
+		};
+		5130C2D817B95E560083F30A /* http-parser */ = {
+			isa = PBXGroup;
+			children = (
+				5130C2D917B95E690083F30A /* http_parser.c */,
+				5130C2DA17B95E690083F30A /* http_parser.h */,
+			);
+			name = "http-parser";
+			sourceTree = "<group>";
+		};
+		5174F1AC17B68EA700ACF06B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5174F1B617B68EA700ACF06B /* ObjectiveGit.framework */,
+				5174F1B817B68EA700ACF06B /* ObjectiveGitTests.octest */,
+				5174F1BA17B68EA700ACF06B /* libObjectiveGit-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		518FD74117AE9FC300A33FAE = {
 			isa = PBXGroup;
 			children = (
-				51AA86C117B2BD5000141CBF /* icon@2x.png */,
 				518FD75317AE9FC300A33FAE /* yomi */,
 				518FD77717AE9FC300A33FAE /* yomiTests */,
 				518FD74C17AE9FC300A33FAE /* Frameworks */,
@@ -237,7 +823,10 @@
 		518FD74C17AE9FC300A33FAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				518FDAAE17AEB66E00A33FAE /* ObjectiveGit.framework */,
+				5130C2D817B95E560083F30A /* http-parser */,
+				5130C1A317B95DD90083F30A /* libgit2 */,
+				5174F1C317B8077200ACF06B /* libz.1.2.5.dylib */,
+				5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */,
 				518FD74D17AE9FC300A33FAE /* UIKit.framework */,
 				518FD74F17AE9FC300A33FAE /* Foundation.framework */,
 				518FD75117AE9FC300A33FAE /* CoreGraphics.framework */,
@@ -250,7 +839,7 @@
 			isa = PBXGroup;
 			children = (
 				51AA865217B290E400141CBF /* images */,
-				518FD78817AEA10100A33FAE /* search */,
+				518FD78817AEA10100A33FAE /* menu */,
 				518FD75C17AE9FC300A33FAE /* AppDelegate.h */,
 				518FD75D17AE9FC300A33FAE /* AppDelegate.m */,
 				518FD76517AE9FC300A33FAE /* MainStoryboard.storyboard */,
@@ -293,7 +882,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		518FD78817AEA10100A33FAE /* search */ = {
+		518FD78817AEA10100A33FAE /* menu */ = {
 			isa = PBXGroup;
 			children = (
 				51AA864917B21DE100141CBF /* MainMenuViewController.h */,
@@ -308,8 +897,10 @@
 				51AA864717B21DC100141CBF /* CenterViewController.m */,
 				518FD76817AE9FC300A33FAE /* KeyboardAwareViewController.h */,
 				518FD76917AE9FC300A33FAE /* KeyboardAwareViewController.m */,
+				5174F1C017B69A9500ACF06B /* GitCloneViewController.h */,
+				5174F1C117B69A9500ACF06B /* GitCloneViewController.m */,
 			);
-			name = search;
+			name = menu;
 			sourceTree = "<group>";
 		};
 		51AA865217B290E400141CBF /* images */ = {
@@ -431,6 +1022,12 @@
 			mainGroup = 518FD74117AE9FC300A33FAE;
 			productRefGroup = 518FD74B17AE9FC300A33FAE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5174F1AC17B68EA700ACF06B /* Products */;
+					ProjectRef = 5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				518FD74917AE9FC300A33FAE /* yomi */,
@@ -438,6 +1035,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5174F1B617B68EA700ACF06B /* ObjectiveGit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectiveGit.framework;
+			remoteRef = 5174F1B517B68EA700ACF06B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5174F1B817B68EA700ACF06B /* ObjectiveGitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ObjectiveGitTests.octest;
+			remoteRef = 5174F1B717B68EA700ACF06B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5174F1BA17B68EA700ACF06B /* libObjectiveGit-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libObjectiveGit-iOS.a";
+			remoteRef = 5174F1B917B68EA700ACF06B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		518FD74817AE9FC300A33FAE /* Resources */ = {
@@ -504,7 +1125,6 @@
 				51AA86BD17B2B80600141CBF /* repo32@2x.png in Resources */,
 				51AA86BE17B2B80600141CBF /* white-repo32@2x.png in Resources */,
 				51AA86C017B2BD2100141CBF /* icon@2x.png in Resources */,
-				51AA86C217B2BD5000141CBF /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +1167,113 @@
 				51AA864B17B21DE100141CBF /* MainMenuViewController.m in Sources */,
 				51AA864E17B21DFC00141CBF /* CloneURLViewController.m in Sources */,
 				51AA865117B21E1C00141CBF /* OpenExistingViewController.m in Sources */,
+				5174F1C217B69A9500ACF06B /* GitCloneViewController.m in Sources */,
+				5130C26E17B95E040083F30A /* attr_file.c in Sources */,
+				5130C26F17B95E040083F30A /* attr.c in Sources */,
+				5130C27017B95E040083F30A /* blob.c in Sources */,
+				5130C27117B95E040083F30A /* branch.c in Sources */,
+				5130C27217B95E040083F30A /* buf_text.c in Sources */,
+				5130C27317B95E040083F30A /* buffer.c in Sources */,
+				5130C27417B95E040083F30A /* cache.c in Sources */,
+				5130C27517B95E040083F30A /* checkout.c in Sources */,
+				5130C27617B95E040083F30A /* clone.c in Sources */,
+				5130C27717B95E040083F30A /* commit_list.c in Sources */,
+				5130C27817B95E040083F30A /* commit.c in Sources */,
+				5130C27917B95E040083F30A /* compress.c in Sources */,
+				5130C27A17B95E040083F30A /* config_cache.c in Sources */,
+				5130C27B17B95E040083F30A /* config_file.c in Sources */,
+				5130C27C17B95E040083F30A /* config.c in Sources */,
+				5130C27D17B95E040083F30A /* crlf.c in Sources */,
+				5130C27E17B95E040083F30A /* date.c in Sources */,
+				5130C27F17B95E040083F30A /* delta-apply.c in Sources */,
+				5130C28017B95E040083F30A /* delta.c in Sources */,
+				5130C28117B95E040083F30A /* diff_driver.c in Sources */,
+				5130C28217B95E040083F30A /* diff_file.c in Sources */,
+				5130C28317B95E040083F30A /* diff_patch.c in Sources */,
+				5130C28417B95E040083F30A /* diff_print.c in Sources */,
+				5130C28517B95E040083F30A /* diff_tform.c in Sources */,
+				5130C28617B95E040083F30A /* diff_xdiff.c in Sources */,
+				5130C28717B95E040083F30A /* diff.c in Sources */,
+				5130C28817B95E040083F30A /* errors.c in Sources */,
+				5130C28917B95E040083F30A /* fetch.c in Sources */,
+				5130C28A17B95E040083F30A /* fetchhead.c in Sources */,
+				5130C28B17B95E040083F30A /* filebuf.c in Sources */,
+				5130C28C17B95E040083F30A /* fileops.c in Sources */,
+				5130C28D17B95E040083F30A /* filter.c in Sources */,
+				5130C28E17B95E040083F30A /* fnmatch.c in Sources */,
+				5130C28F17B95E040083F30A /* global.c in Sources */,
+				5130C29017B95E040083F30A /* graph.c in Sources */,
+				5130C29117B95E040083F30A /* hash_generic.c in Sources */,
+				5130C29317B95E040083F30A /* hash.c in Sources */,
+				5130C29417B95E040083F30A /* hashsig.c in Sources */,
+				5130C29517B95E040083F30A /* ignore.c in Sources */,
+				5130C29617B95E040083F30A /* index.c in Sources */,
+				5130C29717B95E040083F30A /* indexer.c in Sources */,
+				5130C29817B95E040083F30A /* iterator.c in Sources */,
+				5130C29917B95E040083F30A /* merge_file.c in Sources */,
+				5130C29A17B95E040083F30A /* merge.c in Sources */,
+				5130C29B17B95E040083F30A /* message.c in Sources */,
+				5130C29C17B95E040083F30A /* mwindow.c in Sources */,
+				5130C29D17B95E040083F30A /* netops.c in Sources */,
+				5130C29E17B95E040083F30A /* notes.c in Sources */,
+				5130C29F17B95E040083F30A /* object_api.c in Sources */,
+				5130C2A017B95E040083F30A /* object.c in Sources */,
+				5130C2A117B95E040083F30A /* odb_loose.c in Sources */,
+				5130C2A217B95E040083F30A /* odb_pack.c in Sources */,
+				5130C2A317B95E040083F30A /* odb.c in Sources */,
+				5130C2A417B95E040083F30A /* oid.c in Sources */,
+				5130C2A517B95E040083F30A /* pack-objects.c in Sources */,
+				5130C2A617B95E040083F30A /* pack.c in Sources */,
+				5130C2A717B95E040083F30A /* path.c in Sources */,
+				5130C2A817B95E040083F30A /* pathspec.c in Sources */,
+				5130C2A917B95E040083F30A /* pool.c in Sources */,
+				5130C2AA17B95E040083F30A /* posix.c in Sources */,
+				5130C2AB17B95E040083F30A /* pqueue.c in Sources */,
+				5130C2AC17B95E040083F30A /* push.c in Sources */,
+				5130C2AD17B95E040083F30A /* refdb_fs.c in Sources */,
+				5130C2AE17B95E040083F30A /* refdb.c in Sources */,
+				5130C2AF17B95E040083F30A /* reflog.c in Sources */,
+				5130C2B017B95E040083F30A /* refs.c in Sources */,
+				5130C2B117B95E040083F30A /* refspec.c in Sources */,
+				5130C2B217B95E040083F30A /* remote.c in Sources */,
+				5130C2B317B95E040083F30A /* repository.c in Sources */,
+				5130C2B417B95E040083F30A /* reset.c in Sources */,
+				5130C2B517B95E040083F30A /* revparse.c in Sources */,
+				5130C2B617B95E040083F30A /* revwalk.c in Sources */,
+				5130C2B717B95E040083F30A /* sha1_lookup.c in Sources */,
+				5130C2B817B95E040083F30A /* signature.c in Sources */,
+				5130C2B917B95E040083F30A /* stash.c in Sources */,
+				5130C2BA17B95E040083F30A /* status.c in Sources */,
+				5130C2BB17B95E040083F30A /* submodule.c in Sources */,
+				5130C2BC17B95E040083F30A /* tag.c in Sources */,
+				5130C2BD17B95E040083F30A /* thread-utils.c in Sources */,
+				5130C2BE17B95E040083F30A /* trace.c in Sources */,
+				5130C2BF17B95E040083F30A /* transport.c in Sources */,
+				5130C2C017B95E040083F30A /* cred.c in Sources */,
+				5130C2C117B95E040083F30A /* cred_helpers.c in Sources */,
+				5130C2C217B95E040083F30A /* git.c in Sources */,
+				5130C2C317B95E040083F30A /* http.c in Sources */,
+				5130C2C417B95E040083F30A /* local.c in Sources */,
+				5130C2C517B95E040083F30A /* smart.c in Sources */,
+				5130C2C617B95E040083F30A /* smart_pkt.c in Sources */,
+				5130C2C717B95E040083F30A /* smart_protocol.c in Sources */,
+				5130C2C817B95E040083F30A /* ssh.c in Sources */,
+				5130C2C917B95E040083F30A /* winhttp.c in Sources */,
+				5130C2CA17B95E040083F30A /* tree-cache.c in Sources */,
+				5130C2CB17B95E040083F30A /* tree.c in Sources */,
+				5130C2CC17B95E040083F30A /* tsort.c in Sources */,
+				5130C2CD17B95E040083F30A /* map.c in Sources */,
+				5130C2CE17B95E040083F30A /* realpath.c in Sources */,
+				5130C2CF17B95E040083F30A /* util.c in Sources */,
+				5130C2D017B95E040083F30A /* vector.c in Sources */,
+				5130C2D117B95E040083F30A /* xdiffi.c in Sources */,
+				5130C2D217B95E040083F30A /* xemit.c in Sources */,
+				5130C2D317B95E040083F30A /* xhistogram.c in Sources */,
+				5130C2D417B95E040083F30A /* xmerge.c in Sources */,
+				5130C2D517B95E040083F30A /* xpatience.c in Sources */,
+				5130C2D617B95E040083F30A /* xprepare.c in Sources */,
+				5130C2D717B95E040083F30A /* xutils.c in Sources */,
+				5130C2DB17B95E690083F30A /* http_parser.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,10 +1390,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yomi/yomi-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"objective-git/Classes",
+					"objective-git/libgit2/include",
+					"objective-git/libgit2/src",
+				);
 				INFOPLIST_FILE = "yomi/yomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -680,10 +1413,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yomi/yomi-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"objective-git/Classes",
+					"objective-git/libgit2/include",
+					"objective-git/libgit2/src",
+				);
 				INFOPLIST_FILE = "yomi/yomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

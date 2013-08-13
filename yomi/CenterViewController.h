@@ -10,4 +10,8 @@
 
 @interface CenterViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet NSLayoutConstraint *leftConstraint;
+@property (nonatomic, retain) IBOutlet NSLayoutConstraint *topConstraint;
+@property (nonatomic, retain) IBOutlet UIViewController *containedViewController;
+
 @end

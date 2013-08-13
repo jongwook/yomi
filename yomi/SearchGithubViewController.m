@@ -9,6 +9,9 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "SearchGithubViewController.h"
+#import "CenterViewController.h"
+#import "GitCloneViewController.h"
+#import "GTObject.h"
 
 @interface SearchGithubViewController () {
 	NSString *lastKeyword;
@@ -23,7 +26,9 @@
 @implementation SearchGithubViewController
 
 @synthesize searchField;
+@synthesize countLabel;
 @synthesize activityIndicatorView;
+@synthesize tableView;
 
 - (void)viewDidLoad
 {
@@ -75,12 +80,14 @@
 		return;
 	}
 	
-	NSLog(@"didReceiveData : %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
 	
 	NSError *error;
 	NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
 
 	NSInteger count = [(NSNumber *)[result objectForKey:@"total_count"] intValue];
+
+	NSLog(@"Received : %d repositories", count);
+
 	[self.countLabel setText:[NSString stringWithFormat:@"%d found", count]];
 	[self.countLabel setHidden:NO];
 	
@@ -103,17 +110,17 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell"];
 
 	if (cell == nil) {
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
 		cell.selectionStyle = UITableViewCellSelectionStyleGray;
 	}
 	
-	NSDictionary *item = (NSDictionary *)[repositories objectAtIndex:indexPath.row];
+	NSDictionary *item = (NSDictionary *)repositories[indexPath.row];
 	
-	id description = [item objectForKey:@"description"];
-	id cloneURL = [item objectForKey:@"clone_url"] ;
+	id description = item[@"description"];
+	id cloneURL = item[@"clone_url"] ;
 	
 	cell.textLabel.text = [description isKindOfClass:[NSString class]] ? description : @"";
 	cell.detailTextLabel.text = [cloneURL isKindOfClass:[NSString class]] ? cloneURL : @"";
@@ -123,5 +130,38 @@
 	return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	NSDictionary *item = (NSDictionary *)repositories[indexPath.row];
+
+	NSLog(@"Starting to clone %@", item[@"clone_url"]);
+	
+	UIViewController *parent = self.parentViewController;
+	GitCloneViewController *gcvc = [self.storyboard instantiateViewControllerWithIdentifier:@"GitCloneViewController"];
+	
+	[parent addChildViewController:gcvc];
+	[self willMoveToParentViewController:nil];
+	
+	float pageWidth = parent.view.frame.size.width;
+	float width = self.view.frame.size.width;
+	float height = self.view.frame.size.height;
+	
+	[gcvc.view setFrame:CGRectMake(pageWidth, 0.0, width, height)];
+	gcvc.titleLabel.text = [NSString stringWithFormat:@"Cloning %@...", item[@"name"]];
+	
+	[parent transitionFromViewController:self
+						toViewController:gcvc
+								duration:0.3
+								 options:UIViewAnimationOptionCurveEaseInOut
+							  animations:^{
+								  [gcvc.view setFrame:self.view.frame];
+								  [self.view setFrame:CGRectMake(-pageWidth, 0.0, width, height)];
+							  }
+							  completion:^(BOOL finished){
+								  [self removeFromParentViewController];
+								  [gcvc didMoveToParentViewController:parent];
+								  [gcvc startCloning:item[@"name"] fromURL:item[@"clone_url"]];
+							  }];
+	
+}
 
 @end
