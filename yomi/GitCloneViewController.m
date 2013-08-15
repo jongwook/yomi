@@ -7,6 +7,7 @@
 //
 
 #import "GitCloneViewController.h"
+#import "WorkspaceViewController.h"
 #import "GTRepository.h"
 
 @interface GitCloneViewController () {
@@ -94,6 +95,7 @@
 		NSError *err = nil;
 		
 		[self appendStatus:[NSString stringWithFormat:@"Cloning into '%@'", name] replace:NO];
+		[self appendStatus:@"Connecting ..." replace:NO];
 		
 		stage = 0;
 		
@@ -114,20 +116,26 @@
 								  [self appendStatus:status replace:YES];
 							  }
 							  
+							  if ( stage == 1 && progress->received_objects == progress->total_objects ) {
+								  stage = 2;
+								  [self appendStatus:@"Transfer completed. Preparing to check out ..." replace:NO];
+							  }
+							  
 							  NSLog(@"%@", status);
 						  }
 						  checkoutProgressBlock:^(NSString *path, NSUInteger completedSteps, NSUInteger totalSteps) {
 							  dispatch_async(dispatch_get_main_queue(), ^{ [self.progressView setProgress:(float)completedSteps/totalSteps]; });
 							  
 							  NSString *status = [NSString stringWithFormat:@"checkout progress : %d/%d at %@", completedSteps, totalSteps, path];
-							  if ( stage == 1 ) {
-								  stage = 2;
+							  if ( stage == 2 ) {
+								  stage = 3;
 								  [self appendStatus:status replace:NO];
 							  } else {
 								  [self appendStatus:status replace:YES];
 							  }
 							  
 							  NSLog(@"%@", status);
+							  
 						  }];
 		
 		if (err) {
@@ -144,13 +152,24 @@
 			return;
 		}
 		
-		NSLog(@"head : %@", head.targetSHA);
+		[self appendStatus:[NSString stringWithFormat:@"Cloning completed. head : %@", head.targetSHA] replace:NO];
 		
+		[self showProject:path];
 	});
 }
 
 -(void) showProject:(NSString *)path {
+	if (![NSThread isMainThread]) {
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[self showProject:path];
+		});
+		return;
+	}
 	
+	WorkspaceViewController *container = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkspaceViewController"];
+	container.path = path;
+	
+	[self.parentViewController presentModalViewController:container animated:YES];
 }
 
 @end

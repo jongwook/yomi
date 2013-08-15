@@ -113,6 +113,24 @@
 		5130C2D617B95E040083F30A /* xprepare.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26917B95E040083F30A /* xprepare.c */; };
 		5130C2D717B95E040083F30A /* xutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26C17B95E040083F30A /* xutils.c */; };
 		5130C2DB17B95E690083F30A /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C2D917B95E690083F30A /* http_parser.c */; };
+		5130C2E717BAA13B0083F30A /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C2E617BAA13B0083F30A /* CodeViewController.m */; };
+		5130C30617BD1EFA0083F30A /* copymove-cell-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2EA17BD1EFA0083F30A /* copymove-cell-bg.png */; };
+		5130C30717BD1EFA0083F30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2EB17BD1EFA0083F30A /* InfoPlist.strings */; };
+		5130C30817BD1EFA0083F30A /* item-counter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2ED17BD1EFA0083F30A /* item-counter.png */; };
+		5130C30917BD1EFA0083F30A /* item-counter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2EE17BD1EFA0083F30A /* item-counter@2x.png */; };
+		5130C30A17BD1EFA0083F30A /* item-icon-folder-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2EF17BD1EFA0083F30A /* item-icon-folder-selected.png */; };
+		5130C30B17BD1EFA0083F30A /* item-icon-folder-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2F017BD1EFA0083F30A /* item-icon-folder-selected@2x.png */; };
+		5130C30C17BD1EFA0083F30A /* item-icon-folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2F117BD1EFA0083F30A /* item-icon-folder.png */; };
+		5130C30D17BD1EFA0083F30A /* item-icon-folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2F217BD1EFA0083F30A /* item-icon-folder@2x.png */; };
+		5130C30F17BD1EFA0083F30A /* KOTree-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2F517BD1EFA0083F30A /* KOTree-Info.plist */; };
+		5130C31017BD1EFA0083F30A /* KOTreeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C2F817BD1EFA0083F30A /* KOTreeItem.m */; };
+		5130C31117BD1EFA0083F30A /* KOTreeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C2FA17BD1EFA0083F30A /* KOTreeTableViewCell.m */; };
+		5130C31217BD1EFA0083F30A /* KOTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C2FC17BD1EFA0083F30A /* KOTreeViewController.m */; };
+		5130C31417BD1EFA0083F30A /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C30117BD1EFA0083F30A /* MFSideMenuContainerViewController.m */; };
+		5130C31517BD1EFA0083F30A /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C30317BD1EFA0083F30A /* MFSideMenuShadow.m */; };
+		5130C31617BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C30517BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.m */; };
+		5130C31917BD291B0083F30A /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C31817BD291B0083F30A /* LeftMenuViewController.m */; };
+		5130C31C17BD29E90083F30A /* WorkspaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C31B17BD29E90083F30A /* WorkspaceViewController.m */; };
 		5174F1BB17B6921100ACF06B /* libObjectiveGit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174F1BA17B68EA700ACF06B /* libObjectiveGit-iOS.a */; };
 		5174F1C217B69A9500ACF06B /* GitCloneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5174F1C117B69A9500ACF06B /* GitCloneViewController.m */; };
 		5174F1C417B8077200ACF06B /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174F1C317B8077200ACF06B /* libz.1.2.5.dylib */; };
@@ -424,6 +442,35 @@
 		5130C26D17B95E040083F30A /* xutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xutils.h; sourceTree = "<group>"; };
 		5130C2D917B95E690083F30A /* http_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = http_parser.c; path = "objective-git/libgit2/deps/http-parser/http_parser.c"; sourceTree = "<group>"; };
 		5130C2DA17B95E690083F30A /* http_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = http_parser.h; path = "objective-git/libgit2/deps/http-parser/http_parser.h"; sourceTree = "<group>"; };
+		5130C2E517BAA13B0083F30A /* CodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeViewController.h; sourceTree = "<group>"; };
+		5130C2E617BAA13B0083F30A /* CodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeViewController.m; sourceTree = "<group>"; };
+		5130C2EA17BD1EFA0083F30A /* copymove-cell-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "copymove-cell-bg.png"; sourceTree = "<group>"; };
+		5130C2EC17BD1EFA0083F30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5130C2ED17BD1EFA0083F30A /* item-counter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-counter.png"; sourceTree = "<group>"; };
+		5130C2EE17BD1EFA0083F30A /* item-counter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-counter@2x.png"; sourceTree = "<group>"; };
+		5130C2EF17BD1EFA0083F30A /* item-icon-folder-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder-selected.png"; sourceTree = "<group>"; };
+		5130C2F017BD1EFA0083F30A /* item-icon-folder-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder-selected@2x.png"; sourceTree = "<group>"; };
+		5130C2F117BD1EFA0083F30A /* item-icon-folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder.png"; sourceTree = "<group>"; };
+		5130C2F217BD1EFA0083F30A /* item-icon-folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder@2x.png"; sourceTree = "<group>"; };
+		5130C2F517BD1EFA0083F30A /* KOTree-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KOTree-Info.plist"; sourceTree = "<group>"; };
+		5130C2F617BD1EFA0083F30A /* KOTree-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KOTree-Prefix.pch"; sourceTree = "<group>"; };
+		5130C2F717BD1EFA0083F30A /* KOTreeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeItem.h; sourceTree = "<group>"; };
+		5130C2F817BD1EFA0083F30A /* KOTreeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOTreeItem.m; sourceTree = "<group>"; };
+		5130C2F917BD1EFA0083F30A /* KOTreeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeTableViewCell.h; sourceTree = "<group>"; };
+		5130C2FA17BD1EFA0083F30A /* KOTreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOTreeTableViewCell.m; sourceTree = "<group>"; };
+		5130C2FB17BD1EFA0083F30A /* KOTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOTreeViewController.h; sourceTree = "<group>"; };
+		5130C2FC17BD1EFA0083F30A /* KOTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOTreeViewController.m; sourceTree = "<group>"; };
+		5130C2FF17BD1EFA0083F30A /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
+		5130C30017BD1EFA0083F30A /* MFSideMenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuContainerViewController.h; sourceTree = "<group>"; };
+		5130C30117BD1EFA0083F30A /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
+		5130C30217BD1EFA0083F30A /* MFSideMenuShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuShadow.h; sourceTree = "<group>"; };
+		5130C30317BD1EFA0083F30A /* MFSideMenuShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuShadow.m; sourceTree = "<group>"; };
+		5130C30417BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
+		5130C30517BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
+		5130C31717BD291B0083F30A /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		5130C31817BD291B0083F30A /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		5130C31A17BD29E90083F30A /* WorkspaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkspaceViewController.h; sourceTree = "<group>"; };
+		5130C31B17BD29E90083F30A /* WorkspaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceViewController.m; sourceTree = "<group>"; };
 		5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveGitFramework.xcodeproj; path = "objective-git/ObjectiveGitFramework.xcodeproj"; sourceTree = "<group>"; };
 		5174F1C017B69A9500ACF06B /* GitCloneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitCloneViewController.h; sourceTree = "<group>"; };
 		5174F1C117B69A9500ACF06B /* GitCloneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitCloneViewController.m; sourceTree = "<group>"; };
@@ -791,6 +838,56 @@
 			name = "http-parser";
 			sourceTree = "<group>";
 		};
+		5130C2DF17BAA11A0083F30A /* main */ = {
+			isa = PBXGroup;
+			children = (
+				5130C2E517BAA13B0083F30A /* CodeViewController.h */,
+				5130C2E617BAA13B0083F30A /* CodeViewController.m */,
+				5130C31717BD291B0083F30A /* LeftMenuViewController.h */,
+				5130C31817BD291B0083F30A /* LeftMenuViewController.m */,
+				5130C31A17BD29E90083F30A /* WorkspaceViewController.h */,
+				5130C31B17BD29E90083F30A /* WorkspaceViewController.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		5130C2E917BD1EFA0083F30A /* KOTree */ = {
+			isa = PBXGroup;
+			children = (
+				5130C2EA17BD1EFA0083F30A /* copymove-cell-bg.png */,
+				5130C2EB17BD1EFA0083F30A /* InfoPlist.strings */,
+				5130C2ED17BD1EFA0083F30A /* item-counter.png */,
+				5130C2EE17BD1EFA0083F30A /* item-counter@2x.png */,
+				5130C2EF17BD1EFA0083F30A /* item-icon-folder-selected.png */,
+				5130C2F017BD1EFA0083F30A /* item-icon-folder-selected@2x.png */,
+				5130C2F117BD1EFA0083F30A /* item-icon-folder.png */,
+				5130C2F217BD1EFA0083F30A /* item-icon-folder@2x.png */,
+				5130C2F517BD1EFA0083F30A /* KOTree-Info.plist */,
+				5130C2F617BD1EFA0083F30A /* KOTree-Prefix.pch */,
+				5130C2F717BD1EFA0083F30A /* KOTreeItem.h */,
+				5130C2F817BD1EFA0083F30A /* KOTreeItem.m */,
+				5130C2F917BD1EFA0083F30A /* KOTreeTableViewCell.h */,
+				5130C2FA17BD1EFA0083F30A /* KOTreeTableViewCell.m */,
+				5130C2FB17BD1EFA0083F30A /* KOTreeViewController.h */,
+				5130C2FC17BD1EFA0083F30A /* KOTreeViewController.m */,
+			);
+			path = KOTree;
+			sourceTree = "<group>";
+		};
+		5130C2FE17BD1EFA0083F30A /* MFSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				5130C2FF17BD1EFA0083F30A /* MFSideMenu.h */,
+				5130C30017BD1EFA0083F30A /* MFSideMenuContainerViewController.h */,
+				5130C30117BD1EFA0083F30A /* MFSideMenuContainerViewController.m */,
+				5130C30217BD1EFA0083F30A /* MFSideMenuShadow.h */,
+				5130C30317BD1EFA0083F30A /* MFSideMenuShadow.m */,
+				5130C30417BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.h */,
+				5130C30517BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.m */,
+			);
+			path = MFSideMenu;
+			sourceTree = "<group>";
+		};
 		5174F1AC17B68EA700ACF06B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -823,6 +920,8 @@
 		518FD74C17AE9FC300A33FAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5130C2E917BD1EFA0083F30A /* KOTree */,
+				5130C2FE17BD1EFA0083F30A /* MFSideMenu */,
 				5130C2D817B95E560083F30A /* http-parser */,
 				5130C1A317B95DD90083F30A /* libgit2 */,
 				5174F1C317B8077200ACF06B /* libz.1.2.5.dylib */,
@@ -838,8 +937,9 @@
 		518FD75317AE9FC300A33FAE /* yomi */ = {
 			isa = PBXGroup;
 			children = (
-				51AA865217B290E400141CBF /* images */,
 				518FD78817AEA10100A33FAE /* menu */,
+				5130C2DF17BAA11A0083F30A /* main */,
+				51AA865217B290E400141CBF /* images */,
 				518FD75C17AE9FC300A33FAE /* AppDelegate.h */,
 				518FD75D17AE9FC300A33FAE /* AppDelegate.m */,
 				518FD76517AE9FC300A33FAE /* MainStoryboard.storyboard */,
@@ -1125,6 +1225,15 @@
 				51AA86BD17B2B80600141CBF /* repo32@2x.png in Resources */,
 				51AA86BE17B2B80600141CBF /* white-repo32@2x.png in Resources */,
 				51AA86C017B2BD2100141CBF /* icon@2x.png in Resources */,
+				5130C30617BD1EFA0083F30A /* copymove-cell-bg.png in Resources */,
+				5130C30717BD1EFA0083F30A /* InfoPlist.strings in Resources */,
+				5130C30817BD1EFA0083F30A /* item-counter.png in Resources */,
+				5130C30917BD1EFA0083F30A /* item-counter@2x.png in Resources */,
+				5130C30A17BD1EFA0083F30A /* item-icon-folder-selected.png in Resources */,
+				5130C30B17BD1EFA0083F30A /* item-icon-folder-selected@2x.png in Resources */,
+				5130C30C17BD1EFA0083F30A /* item-icon-folder.png in Resources */,
+				5130C30D17BD1EFA0083F30A /* item-icon-folder@2x.png in Resources */,
+				5130C30F17BD1EFA0083F30A /* KOTree-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1274,6 +1383,15 @@
 				5130C2D617B95E040083F30A /* xprepare.c in Sources */,
 				5130C2D717B95E040083F30A /* xutils.c in Sources */,
 				5130C2DB17B95E690083F30A /* http_parser.c in Sources */,
+				5130C2E717BAA13B0083F30A /* CodeViewController.m in Sources */,
+				5130C31017BD1EFA0083F30A /* KOTreeItem.m in Sources */,
+				5130C31117BD1EFA0083F30A /* KOTreeTableViewCell.m in Sources */,
+				5130C31217BD1EFA0083F30A /* KOTreeViewController.m in Sources */,
+				5130C31417BD1EFA0083F30A /* MFSideMenuContainerViewController.m in Sources */,
+				5130C31517BD1EFA0083F30A /* MFSideMenuShadow.m in Sources */,
+				5130C31617BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.m in Sources */,
+				5130C31917BD291B0083F30A /* LeftMenuViewController.m in Sources */,
+				5130C31C17BD29E90083F30A /* WorkspaceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1296,6 +1414,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5130C2EB17BD1EFA0083F30A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5130C2EC17BD1EFA0083F30A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		518FD75617AE9FC300A33FAE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

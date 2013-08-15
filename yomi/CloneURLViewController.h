@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CloneURLViewController : UIViewController
+@interface CloneURLViewController : UIViewController <UITextFieldDelegate>
 
 -(IBAction)close:(id)sender;
+-(IBAction)clone:(id)sender;
+
+@property (nonatomic, retain) IBOutlet UITextField *urlField;
 
 @end

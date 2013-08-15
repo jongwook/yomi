@@ -180,6 +180,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0BX-qP-XAR" id="fYX-ak-ZKa"/>
+                                </connections>
                             </textField>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2r7-WU-hsN"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYP-Qz-aq5">
@@ -199,14 +202,30 @@
                                     <action selector="close:" destination="0BX-qP-XAR" eventType="touchUpInside" id="GiA-wt-j6f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xh-ca-1hV">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clone">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clone:" destination="0BX-qP-XAR" eventType="touchUpInside" id="enT-2K-zIG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21155315899999999" green="0.21155315899999999" blue="0.21155315899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jYP-Qz-aq5" firstAttribute="top" secondItem="xf4-hs-5wp" secondAttribute="top" constant="1" id="0vB-Pf-FeE"/>
                             <constraint firstItem="O9a-US-7Lu" firstAttribute="top" secondItem="xf4-hs-5wp" secondAttribute="top" constant="20" symbolic="YES" type="default" id="4Ds-wl-zva"/>
                             <constraint firstAttribute="trailing" secondItem="Si8-D8-RfU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="LXt-nj-nPs"/>
+                            <constraint firstAttribute="trailing" secondItem="1Xh-ca-1hV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ofl-2s-0UW"/>
                             <constraint firstAttribute="trailing" secondItem="2r7-WU-hsN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="WX1-nf-P5f"/>
+                            <constraint firstAttribute="bottom" secondItem="1Xh-ca-1hV" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="baI-Zs-D1D"/>
                             <constraint firstItem="2r7-WU-hsN" firstAttribute="top" secondItem="xf4-hs-5wp" secondAttribute="top" constant="20" symbolic="YES" type="default" id="e50-Y2-qKw"/>
+                            <constraint firstItem="1Xh-ca-1hV" firstAttribute="leading" secondItem="xf4-hs-5wp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ibm-u8-2AV"/>
                             <constraint firstItem="Si8-D8-RfU" firstAttribute="leading" secondItem="xf4-hs-5wp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qAK-rF-Iln"/>
                             <constraint firstItem="O9a-US-7Lu" firstAttribute="leading" secondItem="xf4-hs-5wp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sAT-mh-cde"/>
                             <constraint firstAttribute="trailing" secondItem="jYP-Qz-aq5" secondAttribute="trailing" constant="1" id="sWB-BE-GZ1"/>
@@ -214,6 +233,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="urlField" destination="Si8-D8-RfU" id="rpS-UE-0G0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjt-UJ-ybw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -510,7 +532,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQQ-Qo-QIR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="-841"/>
+            <point key="canvasLocation" x="52" y="358"/>
         </scene>
         <!--Git Clone - contained-->
         <scene sceneID="qoD-AM-MqR">
@@ -577,7 +599,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYs-eI-Fbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104" y="-656"/>
+            <point key="canvasLocation" x="152" y="520"/>
+        </scene>
+        <!--Left Menu View Controller-->
+        <scene sceneID="BQq-yJ-z2L">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S7Z-y7-ZUl" customClass="LeftMenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qb3-ZG-LqT">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5X-Gv-gEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="356"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="rd6-Cc-6tR">
+            <objects>
+                <viewController storyboardIdentifier="CodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9af-qi-qmz" customClass="CodeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HbK-aY-uAj">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMY-5Y-bKC">
+                                <items>
+                                    <barButtonItem title="Menu" id="iql-s8-W5m">
+                                        <connections>
+                                            <action selector="toggleLeftMenu:" destination="9af-qi-qmz" id="1mR-VV-VaW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AMY-5Y-bKC" firstAttribute="leading" secondItem="HbK-aY-uAj" secondAttribute="leading" type="default" id="1u8-xI-NTD"/>
+                            <constraint firstItem="AMY-5Y-bKC" firstAttribute="trailing" secondItem="HbK-aY-uAj" secondAttribute="trailing" type="default" id="jfS-UQ-mha"/>
+                            <constraint firstItem="AMY-5Y-bKC" firstAttribute="top" secondItem="HbK-aY-uAj" secondAttribute="top" type="default" id="mGK-BA-oaY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GcA-tV-O7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811" y="352"/>
+        </scene>
+        <!--Workspace View Controller-->
+        <scene sceneID="FKt-uN-VoL">
+            <objects>
+                <viewController storyboardIdentifier="WorkspaceViewController" id="a5j-ok-4Hr" customClass="WorkspaceViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WqG-tt-FCn">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhL-M9-bVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811" y="-821"/>
         </scene>
     </scenes>
     <resources>
@@ -597,7 +677,15 @@
         <class className="CloneURLViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CloneURLViewController.h"/>
             <relationships>
+                <relationship kind="action" name="clone:"/>
                 <relationship kind="action" name="close:"/>
+                <relationship kind="outlet" name="urlField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="CodeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CodeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="toggleLeftMenu:"/>
             </relationships>
         </class>
         <class className="GitCloneViewController" superclassName="UIViewController">
@@ -609,11 +697,25 @@
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
+        <class className="KOTreeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KOTreeViewController.h"/>
+        </class>
         <class className="KeyboardAwareViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KeyboardAwareViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="bottomConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="topConstraint" candidateClass="NSLayoutConstraint"/>
+            </relationships>
+        </class>
+        <class className="LeftMenuViewController" superclassName="KOTreeViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeftMenuViewController.h"/>
+        </class>
+        <class className="MFSideMenuContainerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFSideMenuContainerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="centerViewController"/>
+                <relationship kind="outlet" name="leftMenuViewController" candidateClass="UIViewController"/>
+                <relationship kind="outlet" name="rightMenuViewController" candidateClass="UIViewController"/>
             </relationships>
         </class>
         <class className="MainMenuViewController" superclassName="UIViewController">
@@ -638,6 +740,9 @@
                 <relationship kind="outlet" name="searchField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
+        </class>
+        <class className="WorkspaceViewController" superclassName="MFSideMenuContainerViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WorkspaceViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

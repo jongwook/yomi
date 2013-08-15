@@ -146,7 +146,6 @@
 	float height = self.view.frame.size.height;
 	
 	[gcvc.view setFrame:CGRectMake(pageWidth, 0.0, width, height)];
-	gcvc.titleLabel.text = [NSString stringWithFormat:@"Cloning %@...", item[@"name"]];
 	
 	[parent transitionFromViewController:self
 						toViewController:gcvc
