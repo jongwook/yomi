@@ -8,11 +8,27 @@
 
 #import "AppDelegate.h"
 
+#import "GCDWebServer.h"
+
+@interface AppDelegate() {
+	GCDWebServer *server;
+}
+
+@end
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+	NSString *web = [NSBundle.mainBundle.resourcePath stringByAppendingPathComponent:@"web"];
+	NSString *workspace = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"workspace"];
+	
+	server = [GCDWebServer new];
+	[server addHandlerForBasePath:@"/web/" localPath:web indexFilename:nil cacheAge:0];
+	[server addHandlerForBasePath:@"/data/" localPath:workspace indexFilename:nil cacheAge:0];
+	[server startWithPort:8192 bonjourName:@"yomi"];
+	
     return YES;
 }
 							

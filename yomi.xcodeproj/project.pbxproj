@@ -131,6 +131,13 @@
 		5130C31617BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C30517BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.m */; };
 		5130C31917BD291B0083F30A /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C31817BD291B0083F30A /* LeftMenuViewController.m */; };
 		5130C31C17BD29E90083F30A /* WorkspaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C31B17BD29E90083F30A /* WorkspaceViewController.m */; };
+		5130C32C17BFD4970083F30A /* web in Resources */ = {isa = PBXBuildFile; fileRef = 5130C32B17BFD4960083F30A /* web */; };
+		5130C32E17BFE63B0083F30A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5130C32D17BFE63B0083F30A /* CFNetwork.framework */; };
+		5130C33017BFE6960083F30A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5130C32F17BFE6950083F30A /* MobileCoreServices.framework */; };
+		5130C33D17BFE7A30083F30A /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C33517BFE7A30083F30A /* GCDWebServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5130C33E17BFE7A30083F30A /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C33717BFE7A30083F30A /* GCDWebServerConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5130C33F17BFE7A30083F30A /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C33A17BFE7A30083F30A /* GCDWebServerRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5130C34017BFE7A30083F30A /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C33C17BFE7A30083F30A /* GCDWebServerResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5174F1BB17B6921100ACF06B /* libObjectiveGit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174F1BA17B68EA700ACF06B /* libObjectiveGit-iOS.a */; };
 		5174F1C217B69A9500ACF06B /* GitCloneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5174F1C117B69A9500ACF06B /* GitCloneViewController.m */; };
 		5174F1C417B8077200ACF06B /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174F1C317B8077200ACF06B /* libz.1.2.5.dylib */; };
@@ -471,6 +478,18 @@
 		5130C31817BD291B0083F30A /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		5130C31A17BD29E90083F30A /* WorkspaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkspaceViewController.h; sourceTree = "<group>"; };
 		5130C31B17BD29E90083F30A /* WorkspaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceViewController.m; sourceTree = "<group>"; };
+		5130C32B17BFD4960083F30A /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = SOURCE_ROOT; };
+		5130C32D17BFE63B0083F30A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5130C32F17BFE6950083F30A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5130C33417BFE7A30083F30A /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		5130C33517BFE7A30083F30A /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		5130C33617BFE7A30083F30A /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		5130C33717BFE7A30083F30A /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		5130C33817BFE7A30083F30A /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		5130C33917BFE7A30083F30A /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		5130C33A17BFE7A30083F30A /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		5130C33B17BFE7A30083F30A /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		5130C33C17BFE7A30083F30A /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
 		5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveGitFramework.xcodeproj; path = "objective-git/ObjectiveGitFramework.xcodeproj"; sourceTree = "<group>"; };
 		5174F1C017B69A9500ACF06B /* GitCloneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitCloneViewController.h; sourceTree = "<group>"; };
 		5174F1C117B69A9500ACF06B /* GitCloneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitCloneViewController.m; sourceTree = "<group>"; };
@@ -569,6 +588,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5130C33017BFE6960083F30A /* MobileCoreServices.framework in Frameworks */,
+				5130C32E17BFE63B0083F30A /* CFNetwork.framework in Frameworks */,
 				5174F1C417B8077200ACF06B /* libz.1.2.5.dylib in Frameworks */,
 				5174F1BB17B6921100ACF06B /* libObjectiveGit-iOS.a in Frameworks */,
 				518FD74E17AE9FC300A33FAE /* UIKit.framework in Frameworks */,
@@ -888,6 +909,22 @@
 			path = MFSideMenu;
 			sourceTree = "<group>";
 		};
+		5130C33317BFE7A30083F30A /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				5130C33417BFE7A30083F30A /* GCDWebServer.h */,
+				5130C33517BFE7A30083F30A /* GCDWebServer.m */,
+				5130C33617BFE7A30083F30A /* GCDWebServerConnection.h */,
+				5130C33717BFE7A30083F30A /* GCDWebServerConnection.m */,
+				5130C33817BFE7A30083F30A /* GCDWebServerPrivate.h */,
+				5130C33917BFE7A30083F30A /* GCDWebServerRequest.h */,
+				5130C33A17BFE7A30083F30A /* GCDWebServerRequest.m */,
+				5130C33B17BFE7A30083F30A /* GCDWebServerResponse.h */,
+				5130C33C17BFE7A30083F30A /* GCDWebServerResponse.m */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
 		5174F1AC17B68EA700ACF06B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -920,12 +957,15 @@
 		518FD74C17AE9FC300A33FAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */,
 				5130C2E917BD1EFA0083F30A /* KOTree */,
 				5130C2FE17BD1EFA0083F30A /* MFSideMenu */,
 				5130C2D817B95E560083F30A /* http-parser */,
 				5130C1A317B95DD90083F30A /* libgit2 */,
 				5174F1C317B8077200ACF06B /* libz.1.2.5.dylib */,
-				5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */,
+				5130C33317BFE7A30083F30A /* GCDWebServer */,
+				5130C32F17BFE6950083F30A /* MobileCoreServices.framework */,
+				5130C32D17BFE63B0083F30A /* CFNetwork.framework */,
 				518FD74D17AE9FC300A33FAE /* UIKit.framework */,
 				518FD74F17AE9FC300A33FAE /* Foundation.framework */,
 				518FD75117AE9FC300A33FAE /* CoreGraphics.framework */,
@@ -937,6 +977,7 @@
 		518FD75317AE9FC300A33FAE /* yomi */ = {
 			isa = PBXGroup;
 			children = (
+				5130C32B17BFD4960083F30A /* web */,
 				518FD78817AEA10100A33FAE /* menu */,
 				5130C2DF17BAA11A0083F30A /* main */,
 				51AA865217B290E400141CBF /* images */,
@@ -1234,6 +1275,7 @@
 				5130C30C17BD1EFA0083F30A /* item-icon-folder.png in Resources */,
 				5130C30D17BD1EFA0083F30A /* item-icon-folder@2x.png in Resources */,
 				5130C30F17BD1EFA0083F30A /* KOTree-Info.plist in Resources */,
+				5130C32C17BFD4970083F30A /* web in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1392,6 +1434,10 @@
 				5130C31617BD1EFA0083F30A /* UIViewController+MFSideMenuAdditions.m in Sources */,
 				5130C31917BD291B0083F30A /* LeftMenuViewController.m in Sources */,
 				5130C31C17BD29E90083F30A /* WorkspaceViewController.m in Sources */,
+				5130C33D17BFE7A30083F30A /* GCDWebServer.m in Sources */,
+				5130C33E17BFE7A30083F30A /* GCDWebServerConnection.m in Sources */,
+				5130C33F17BFE7A30083F30A /* GCDWebServerRequest.m in Sources */,
+				5130C34017BFE7A30083F30A /* GCDWebServerResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
