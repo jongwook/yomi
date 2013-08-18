@@ -58,7 +58,7 @@
 		[backgroundImageView setContentMode:UIViewContentModeTopRight];
 		
 		[self setBackgroundView:backgroundImageView];
-		[self setSelectionStyle:UITableViewCellSelectionStyleNone];
+		[self setSelectionStyle:UITableViewCellSelectionStyleGray];
 		
 		iconButton = [UIButton buttonWithType:UIButtonTypeCustom];
 		[iconButton setFrame:CGRectMake(4, 4, 24, 24)];

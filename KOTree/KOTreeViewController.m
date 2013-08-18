@@ -119,15 +119,15 @@
 	[deleteSelectingItems addObject:selItems];
 }
 
-- (NSMutableArray *)removeIndexPathForTreeItems:(NSMutableArray *)treeItemsToRemove {
+- (NSMutableArray *)indexPathsForTreeItems:(NSMutableArray *)items {
 	NSMutableArray *result = [NSMutableArray array];
 	
 	for (NSInteger i = 0; i < [treeTableView numberOfRowsInSection:0]; ++i) {
 		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
-		KOTreeTableViewCell *cell = (KOTreeTableViewCell *)[treeTableView cellForRowAtIndexPath:indexPath];
-
-		for (KOTreeItem *tmpTreeItem in treeItemsToRemove) {
-			if ([cell.treeItem isEqualToSelectingItem:tmpTreeItem])
+		KOTreeTableViewCell *cell = (KOTreeTableViewCell *)[self tableView:treeTableView cellForRowAtIndexPath:indexPath];
+		
+		for (KOTreeItem *item in items) {
+			if ([cell.treeItem isEqualToSelectingItem:item])
 				[result addObject:indexPath];
 		}
 	}	
@@ -142,7 +142,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[self tableViewAction:tableView withIndexPath:indexPath];
 	
-	KOTreeTableViewCell *cell = (KOTreeTableViewCell *)[treeTableView cellForRowAtIndexPath:indexPath];
+	KOTreeTableViewCell *cell = (KOTreeTableViewCell *)[self tableView:treeTableView cellForRowAtIndexPath:indexPath];
 	
 	NSInteger insertTreeItemIndex = [self.treeItems indexOfObject:cell.treeItem];
 	NSMutableArray *insertIndexPaths = [NSMutableArray array];
@@ -151,9 +151,9 @@
 	NSMutableArray *removeIndexPaths = [NSMutableArray array];
 	NSMutableArray *treeItemsToRemove = [NSMutableArray array];
 	
-	for (KOTreeItem *tmpTreeItem in insertselectingItems) {
-		[tmpTreeItem setPath:[cell.treeItem.path stringByAppendingPathComponent:cell.treeItem.name]];
-		[tmpTreeItem setParentSelectingItem:cell.treeItem];
+	for (KOTreeItem *item in insertselectingItems) {
+		[item setPath:[cell.treeItem.path stringByAppendingPathComponent:cell.treeItem.name]];
+		[item setParentSelectingItem:cell.treeItem];
 		
 		[cell.treeItem.ancestorSelectingItems removeAllObjects];
 		[cell.treeItem.ancestorSelectingItems addObjectsFromArray:insertselectingItems];
@@ -162,26 +162,24 @@
 		
 		BOOL contains = NO;
 		
-		NSLog(@"Examining %@/%@", tmpTreeItem.path, tmpTreeItem.name);
+		NSLog(@"Examining %@/%@", item.path, item.name);
 		for (KOTreeItem *tmp2TreeItem in self.treeItems) {
-			if ([tmp2TreeItem isEqualToSelectingItem:tmpTreeItem]) {
+			if ([tmp2TreeItem isEqualToSelectingItem:item]) {
 				contains = YES;
 				
 				[self selectingItemsToDelete:tmp2TreeItem saveToArray:treeItemsToRemove];
 				
-				removeIndexPaths = [self removeIndexPathForTreeItems:(NSMutableArray *)treeItemsToRemove];
-				
-				NSLog(@"contained : %d, %d", removeIndexPaths.count, treeItemsToRemove.count);
+				removeIndexPaths = [self indexPathsForTreeItems:(NSMutableArray *)treeItemsToRemove];
 			}
 		}
 		
 		if (!contains) {
-			[tmpTreeItem setSubmersionLevel:tmpTreeItem.submersionLevel];
+			[item setSubmersionLevel:item.submersionLevel];
 			
-			[self.treeItems insertObject:tmpTreeItem atIndex:insertTreeItemIndex];
+			[self.treeItems insertObject:item atIndex:insertTreeItemIndex];
 			
-			NSIndexPath *indexPth = [NSIndexPath indexPathForRow:insertTreeItemIndex inSection:0];
-			[insertIndexPaths addObject:indexPth];
+			NSIndexPath *indexPath = [NSIndexPath indexPathForRow:insertTreeItemIndex inSection:0];
+			[insertIndexPaths addObject:indexPath];
 		}
 	}
 	

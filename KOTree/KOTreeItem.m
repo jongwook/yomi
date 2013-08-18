@@ -55,12 +55,7 @@
 	if (self == selectingItem)
         return YES;
 	
-	if ([name isEqualToString:selectingItem.name])
-		if ([path isEqualToString:selectingItem.path])
-			if (numberOfSubitems == selectingItem.numberOfSubitems)
-				return YES;
-	
-	return NO;
+	return [name isEqualToString:selectingItem.name] && [path isEqualToString:selectingItem.path];
 }
 
 
