@@ -58,7 +58,7 @@
 	[treeTableView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
 	[treeTableView setBackgroundColor:[UIColor colorWithRed:1 green:0.976 blue:0.957 alpha:1] /*#fff9f4*/];
 	[treeTableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-	[treeTableView setRowHeight:65.0f];
+	[treeTableView setRowHeight:32.0f];
 	[treeTableView setDelegate:(id<UITableViewDelegate>)self];
 	[treeTableView setDataSource:(id<UITableViewDataSource>)self];
 	[self.view addSubview:treeTableView];
@@ -67,7 +67,7 @@
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	
-	[[[self treeTableView] delegate] tableView:treeTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	[self.treeTableView reloadData];
 }
 
 #pragma mark - UITableViewDatasource
@@ -141,16 +141,17 @@
 	NSMutableArray *treeItemsToRemove = [NSMutableArray array];
 	
 	for (KOTreeItem *tmpTreeItem in insertselectingItems) {
-	//	[tmpTreeItem setPath:[cell.treeItem.path stringByAppendingPathComponent:cell.treeItem.base]];
-	//[tmpTreeItem setParentSelectingItem:cell.treeItem];
+		[tmpTreeItem setPath:[cell.treeItem.path stringByAppendingPathComponent:cell.treeItem.base]];
+		[tmpTreeItem setParentSelectingItem:cell.treeItem];
 		
-		//[cell.treeItem.ancestorSelectingItems removeAllObjects];
-		//[cell.treeItem.ancestorSelectingItems addObjectsFromArray:insertselectingItems];
+		[cell.treeItem.ancestorSelectingItems removeAllObjects];
+		[cell.treeItem.ancestorSelectingItems addObjectsFromArray:insertselectingItems];
 		
 		insertTreeItemIndex++;
 		
 		BOOL contains = NO;
 		
+		NSLog(@"Examining %@/%@", tmpTreeItem.path, tmpTreeItem.base);
 		for (KOTreeItem *tmp2TreeItem in self.treeItems) {
 			if ([tmp2TreeItem isEqualToSelectingItem:tmpTreeItem]) {
 				contains = YES;
@@ -158,6 +159,8 @@
 				[self selectingItemsToDelete:tmp2TreeItem saveToArray:treeItemsToRemove];
 				
 				removeIndexPaths = [self removeIndexPathForTreeItems:(NSMutableArray *)treeItemsToRemove];
+				
+				NSLog(@"contained : %d, %d", removeIndexPaths.count, treeItemsToRemove.count);
 			}
 		}
 		
@@ -174,6 +177,11 @@
 	if ([insertIndexPaths count]) {
 		[treeTableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
 	}
+	
+	for (KOTreeItem *tmp2TreeItem in treeItemsToRemove) {
+		[self.treeItems removeObject:tmp2TreeItem];
+	}
+	
 	
 	if ([removeIndexPaths count]) {
 		[treeTableView deleteRowsAtIndexPaths:removeIndexPaths withRowAnimation:UITableViewRowAnimationBottom];

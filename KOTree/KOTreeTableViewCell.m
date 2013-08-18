@@ -39,7 +39,7 @@
 #define KOCOLOR_FILES_TITLE_SHADOW [UIColor colorWithRed:1 green:1 blue:1 alpha:1] /*#ffffff*/
 #define KOCOLOR_FILES_COUNTER [UIColor colorWithRed:0.608 green:0.376 blue:0.251 alpha:1] /*#9b6040*/
 #define KOCOLOR_FILES_COUNTER_SHADOW [UIColor colorWithRed:1 green:1 blue:1 alpha:0.35] /*#ffffff*/
-#define KOFONT_FILES_TITLE [UIFont fontWithName:@"HelveticaNeue" size:24.0f]
+#define KOFONT_FILES_TITLE [UIFont fontWithName:@"HelveticaNeue" size:16.0f]
 #define KOFONT_FILES_COUNTER [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.0f]
 
 @implementation KOTreeTableViewCell
@@ -63,7 +63,7 @@
 		[self setSelectionStyle:UITableViewCellSelectionStyleNone];
 		
 		iconButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		[iconButton setFrame:CGRectMake(0, 0, 30, 65)];
+		[iconButton setFrame:CGRectMake(4, 4, 24, 24)];
 		[iconButton setAdjustsImageWhenHighlighted:NO];
 		[iconButton addTarget:self action:@selector(iconButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 		[iconButton setImage:[UIImage imageNamed:@"item-icon-folder"] forState:UIControlStateNormal];
@@ -83,12 +83,12 @@
 		[titleTextField setUserInteractionEnabled:NO];
 		[titleTextField setBackgroundColor:[UIColor clearColor]];
 		[titleTextField sizeToFit];
-		[titleTextField setFrame:CGRectMake(108, 17, titleTextField.frame.size.width, titleTextField.frame.size.height)];
+		[titleTextField setFrame:CGRectMake(108, 5, titleTextField.frame.size.width, titleTextField.frame.size.height)];
 		[self.contentView addSubview:titleTextField];
 		
 		[self.layer setMasksToBounds:YES];
 		
-		countLabel = [[UILabel alloc] initWithFrame:CGRectMake(686, 28, 47, 28)];
+		countLabel = [[UILabel alloc] initWithFrame:CGRectMake(686, 2, 47, 28)];
 		[countLabel setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin];
 		[countLabel setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"item-counter"]]];
 		[countLabel setTextAlignment:UITextAlignmentCenter];
@@ -116,11 +116,11 @@
 	CGRect rect;
 	
 	rect = iconButton.frame;
-	rect.origin.x = 20 * level;
+	rect.origin.x = 15 * level;
 	iconButton.frame = rect;
 	
 	rect = titleTextField.frame;
-	rect.origin.x = 38 + 20 * level;
+	rect.origin.x = 30 + 15 * level;
 	titleTextField.frame = rect;
 }
 
