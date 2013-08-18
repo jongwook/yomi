@@ -36,11 +36,12 @@
 
 @implementation KOTreeItem
 
-@synthesize base, path;
+@synthesize name, path;
 @synthesize numberOfSubitems;
 @synthesize parentSelectingItem;
 @synthesize ancestorSelectingItems;
 @synthesize submersionLevel;
+@synthesize isDirectory;
 
 - (BOOL)isEqual:(id)other {
     if (other == self)
@@ -54,7 +55,7 @@
 	if (self == selectingItem)
         return YES;
 	
-	if ([base isEqualToString:selectingItem.base])
+	if ([name isEqualToString:selectingItem.name])
 		if ([path isEqualToString:selectingItem.path])
 			if (numberOfSubitems == selectingItem.numberOfSubitems)
 				return YES;

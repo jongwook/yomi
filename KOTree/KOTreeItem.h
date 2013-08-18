@@ -36,11 +36,12 @@
 
 @interface KOTreeItem : NSObject
 
-@property (nonatomic, strong) NSString *base, *path;
+@property (nonatomic, strong) NSString *name, *path;
 @property (nonatomic) NSInteger numberOfSubitems;
 @property (nonatomic, strong) KOTreeItem *parentSelectingItem;
 @property (nonatomic, strong) NSMutableArray *ancestorSelectingItems;
 @property (nonatomic) NSInteger submersionLevel;
+@property (nonatomic) BOOL isDirectory;
 
 - (BOOL)isEqualToSelectingItem:(KOTreeItem *)selectingItem;
 

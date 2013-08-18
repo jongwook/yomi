@@ -35,10 +35,8 @@
 #import "KOTreeTableViewCell.h"
 #import <QuartzCore/QuartzCore.h>
 
-#define KOCOLOR_FILES_TITLE [UIColor colorWithRed:0.4 green:0.357 blue:0.325 alpha:1] /*#665b53*/
+#define KOCOLOR_FILES_TITLE [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:1] /*#665b53*/
 #define KOCOLOR_FILES_TITLE_SHADOW [UIColor colorWithRed:1 green:1 blue:1 alpha:1] /*#ffffff*/
-#define KOCOLOR_FILES_COUNTER [UIColor colorWithRed:0.608 green:0.376 blue:0.251 alpha:1] /*#9b6040*/
-#define KOCOLOR_FILES_COUNTER_SHADOW [UIColor colorWithRed:1 green:1 blue:1 alpha:0.35] /*#ffffff*/
 #define KOFONT_FILES_TITLE [UIFont fontWithName:@"HelveticaNeue" size:16.0f]
 #define KOFONT_FILES_COUNTER [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.0f]
 
@@ -66,9 +64,11 @@
 		[iconButton setFrame:CGRectMake(4, 4, 24, 24)];
 		[iconButton setAdjustsImageWhenHighlighted:NO];
 		[iconButton addTarget:self action:@selector(iconButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-		[iconButton setImage:[UIImage imageNamed:@"item-icon-folder"] forState:UIControlStateNormal];
-		[iconButton setImage:[UIImage imageNamed:@"item-icon-folder-selected"] forState:UIControlStateSelected];
-		[iconButton setImage:[UIImage imageNamed:@"item-icon-folder-selected"] forState:UIControlStateHighlighted];
+		
+		[iconButton setImage:[UIImage imageNamed:@"dir"] forState:UIControlStateNormal];
+		[iconButton setImage:[UIImage imageNamed:@"dir"] forState:UIControlStateSelected];
+		[iconButton setImage:[UIImage imageNamed:@"dir"] forState:UIControlStateHighlighted];
+		iconButton.alpha = 0.5;
 		
 		[self.contentView addSubview:iconButton];
 		
@@ -88,19 +88,17 @@
 		
 		[self.layer setMasksToBounds:YES];
 		
-		countLabel = [[UILabel alloc] initWithFrame:CGRectMake(686, 2, 47, 28)];
+		countLabel = [[UILabel alloc] initWithFrame:CGRectMake(686, 2, 28, 28)];
 		[countLabel setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin];
-		[countLabel setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"item-counter"]]];
-		[countLabel setTextAlignment:UITextAlignmentCenter];
-		[countLabel setLineBreakMode:UILineBreakModeMiddleTruncation];
-		[countLabel setFont:KOFONT_FILES_COUNTER];
-		[countLabel setTextColor:KOCOLOR_FILES_COUNTER];
-		[countLabel setShadowColor:KOCOLOR_FILES_COUNTER_SHADOW];
-		[countLabel setShadowOffset:CGSizeMake(0, 1)];
+		[countLabel setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"dir"]]];
+		countLabel.textAlignment = UITextAlignmentCenter;
+		countLabel.font = KOFONT_FILES_COUNTER;
+		countLabel.shadowOffset = CGSizeMake(0, 1);
+		countLabel.alpha = 0.5;
 		
 		[self setAccessoryView:countLabel];
-		[self.accessoryView setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleBottomMargin];
-		
+
+		[self.layer setMasksToBounds:YES];		
     }
     return self;
 }

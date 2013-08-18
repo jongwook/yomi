@@ -114,10 +114,7 @@
 		5130C2D717B95E040083F30A /* xutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C26C17B95E040083F30A /* xutils.c */; };
 		5130C2DB17B95E690083F30A /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 5130C2D917B95E690083F30A /* http_parser.c */; };
 		5130C2E717BAA13B0083F30A /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C2E617BAA13B0083F30A /* CodeViewController.m */; };
-		5130C30617BD1EFA0083F30A /* copymove-cell-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2EA17BD1EFA0083F30A /* copymove-cell-bg.png */; };
 		5130C30717BD1EFA0083F30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2EB17BD1EFA0083F30A /* InfoPlist.strings */; };
-		5130C30817BD1EFA0083F30A /* item-counter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2ED17BD1EFA0083F30A /* item-counter.png */; };
-		5130C30917BD1EFA0083F30A /* item-counter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2EE17BD1EFA0083F30A /* item-counter@2x.png */; };
 		5130C30A17BD1EFA0083F30A /* item-icon-folder-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2EF17BD1EFA0083F30A /* item-icon-folder-selected.png */; };
 		5130C30B17BD1EFA0083F30A /* item-icon-folder-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2F017BD1EFA0083F30A /* item-icon-folder-selected@2x.png */; };
 		5130C30C17BD1EFA0083F30A /* item-icon-folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 5130C2F117BD1EFA0083F30A /* item-icon-folder.png */; };
@@ -451,10 +448,7 @@
 		5130C2DA17B95E690083F30A /* http_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = http_parser.h; path = "objective-git/libgit2/deps/http-parser/http_parser.h"; sourceTree = "<group>"; };
 		5130C2E517BAA13B0083F30A /* CodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeViewController.h; sourceTree = "<group>"; };
 		5130C2E617BAA13B0083F30A /* CodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeViewController.m; sourceTree = "<group>"; };
-		5130C2EA17BD1EFA0083F30A /* copymove-cell-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "copymove-cell-bg.png"; sourceTree = "<group>"; };
 		5130C2EC17BD1EFA0083F30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5130C2ED17BD1EFA0083F30A /* item-counter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-counter.png"; sourceTree = "<group>"; };
-		5130C2EE17BD1EFA0083F30A /* item-counter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-counter@2x.png"; sourceTree = "<group>"; };
 		5130C2EF17BD1EFA0083F30A /* item-icon-folder-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder-selected.png"; sourceTree = "<group>"; };
 		5130C2F017BD1EFA0083F30A /* item-icon-folder-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder-selected@2x.png"; sourceTree = "<group>"; };
 		5130C2F117BD1EFA0083F30A /* item-icon-folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-icon-folder.png"; sourceTree = "<group>"; };
@@ -875,10 +869,7 @@
 		5130C2E917BD1EFA0083F30A /* KOTree */ = {
 			isa = PBXGroup;
 			children = (
-				5130C2EA17BD1EFA0083F30A /* copymove-cell-bg.png */,
 				5130C2EB17BD1EFA0083F30A /* InfoPlist.strings */,
-				5130C2ED17BD1EFA0083F30A /* item-counter.png */,
-				5130C2EE17BD1EFA0083F30A /* item-counter@2x.png */,
 				5130C2EF17BD1EFA0083F30A /* item-icon-folder-selected.png */,
 				5130C2F017BD1EFA0083F30A /* item-icon-folder-selected@2x.png */,
 				5130C2F117BD1EFA0083F30A /* item-icon-folder.png */,
@@ -1266,10 +1257,7 @@
 				51AA86BD17B2B80600141CBF /* repo32@2x.png in Resources */,
 				51AA86BE17B2B80600141CBF /* white-repo32@2x.png in Resources */,
 				51AA86C017B2BD2100141CBF /* icon@2x.png in Resources */,
-				5130C30617BD1EFA0083F30A /* copymove-cell-bg.png in Resources */,
 				5130C30717BD1EFA0083F30A /* InfoPlist.strings in Resources */,
-				5130C30817BD1EFA0083F30A /* item-counter.png in Resources */,
-				5130C30917BD1EFA0083F30A /* item-counter@2x.png in Resources */,
 				5130C30A17BD1EFA0083F30A /* item-icon-folder-selected.png in Resources */,
 				5130C30B17BD1EFA0083F30A /* item-icon-folder-selected@2x.png in Resources */,
 				5130C30C17BD1EFA0083F30A /* item-icon-folder.png in Resources */,

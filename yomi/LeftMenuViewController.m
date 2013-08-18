@@ -58,21 +58,30 @@
 		if ([name isEqualToString:@".git"] || (name.length >= 4 && [[name substringToIndex:4] isEqualToString:@".git/"])) continue;
 		
 		NSString *subpath = [path stringByAppendingPathComponent:name];
+		NSString *real = [realpath stringByAppendingPathComponent:name];
+		
+		BOOL isDirectory;
+		if (![manager fileExistsAtPath:real isDirectory:&isDirectory]) continue;
 		
 		KOTreeItem *item = [KOTreeItem new];
-		item.base = name;
+		item.name = name;
 		item.path = path;
 		item.submersionLevel = level;
 		item.parentSelectingItem = parent;
 		item.ancestorSelectingItems = [self itemsAtPath:subpath level:level+1 parent:item];
 		item.numberOfSubitems = item.ancestorSelectingItems.count;
+		item.isDirectory = isDirectory;
 		
 		items[subpath] = item.ancestorSelectingItems;
 		
 		subitems[count++] = item;
 	}
 	
-	return [NSMutableArray arrayWithObjects:subitems count:count];
+	NSMutableArray *result = [NSMutableArray arrayWithObjects:subitems count:count];
+	
+	[result sortUsingComparator:^(KOTreeItem *item1, KOTreeItem *item2) { return item1.isDirectory < item2.isDirectory; }];
+	
+	return result;
 }
 
 - (void)didReceiveMemoryWarning

@@ -56,7 +56,6 @@
 	
 	treeTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
 	[treeTableView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-	[treeTableView setBackgroundColor:[UIColor colorWithRed:1 green:0.976 blue:0.957 alpha:1] /*#fff9f4*/];
 	[treeTableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 	[treeTableView setRowHeight:32.0f];
 	[treeTableView setDelegate:(id<UITableViewDelegate>)self];
@@ -85,12 +84,24 @@
 	
 	cell.treeItem = treeItem;
 	
-	if ([treeItem numberOfSubitems])
-		[cell.countLabel setText:[NSString stringWithFormat:@"%d", [treeItem numberOfSubitems]]];
-	else
-		[cell.countLabel setText:@"-"];
+	if (treeItem.isDirectory && treeItem.numberOfSubitems > 0) {
+		[cell.countLabel setText:@"∨"];
+	} else {
+		[cell.countLabel setText:@""];
+	}
 	
-	[cell.titleTextField setText:[treeItem base]];
+	if (!treeItem.isDirectory) {
+		// TODO: detect file type
+		[cell.iconButton setImage:[UIImage imageNamed:@"code"] forState:UIControlStateNormal];
+		[cell.iconButton setImage:[UIImage imageNamed:@"code"] forState:UIControlStateSelected];
+		[cell.iconButton setImage:[UIImage imageNamed:@"code"] forState:UIControlStateHighlighted];
+	} else {
+		[cell.iconButton setImage:[UIImage imageNamed:@"dir"] forState:UIControlStateNormal];
+		[cell.iconButton setImage:[UIImage imageNamed:@"dir"] forState:UIControlStateSelected];
+		[cell.iconButton setImage:[UIImage imageNamed:@"dir"] forState:UIControlStateHighlighted];
+	}
+	
+	[cell.titleTextField setText:treeItem.name];
 	[cell.titleTextField sizeToFit];
 	
 	[cell setDelegate:(id<KOTreeTableViewCellDelegate>)self];
@@ -135,13 +146,13 @@
 	
 	NSInteger insertTreeItemIndex = [self.treeItems indexOfObject:cell.treeItem];
 	NSMutableArray *insertIndexPaths = [NSMutableArray array];
-	NSMutableArray *insertselectingItems = [self listItemsAtPath:[cell.treeItem.path stringByAppendingPathComponent:cell.treeItem.base]];
+	NSMutableArray *insertselectingItems = [self listItemsAtPath:[cell.treeItem.path stringByAppendingPathComponent:cell.treeItem.name]];
 	
 	NSMutableArray *removeIndexPaths = [NSMutableArray array];
 	NSMutableArray *treeItemsToRemove = [NSMutableArray array];
 	
 	for (KOTreeItem *tmpTreeItem in insertselectingItems) {
-		[tmpTreeItem setPath:[cell.treeItem.path stringByAppendingPathComponent:cell.treeItem.base]];
+		[tmpTreeItem setPath:[cell.treeItem.path stringByAppendingPathComponent:cell.treeItem.name]];
 		[tmpTreeItem setParentSelectingItem:cell.treeItem];
 		
 		[cell.treeItem.ancestorSelectingItems removeAllObjects];
@@ -151,7 +162,7 @@
 		
 		BOOL contains = NO;
 		
-		NSLog(@"Examining %@/%@", tmpTreeItem.path, tmpTreeItem.base);
+		NSLog(@"Examining %@/%@", tmpTreeItem.path, tmpTreeItem.name);
 		for (KOTreeItem *tmp2TreeItem in self.treeItems) {
 			if ([tmp2TreeItem isEqualToSelectingItem:tmpTreeItem]) {
 				contains = YES;
@@ -176,6 +187,7 @@
 	
 	if ([insertIndexPaths count]) {
 		[treeTableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
+		[(UILabel *)cell.accessoryView setText:@"∧"];
 	}
 	
 	for (KOTreeItem *tmp2TreeItem in treeItemsToRemove) {
@@ -185,6 +197,7 @@
 	
 	if ([removeIndexPaths count]) {
 		[treeTableView deleteRowsAtIndexPaths:removeIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
+		[(UILabel *)cell.accessoryView setText:@"∨"];
 	}
 }
 
@@ -197,7 +210,7 @@
 #pragma mark - KOTreeTableViewCellDelegate
 
 - (void)treeTableViewCell:(KOTreeTableViewCell *)cell didTapIconWithTreeItem:(KOTreeItem *)tmpTreeItem {
-	NSLog(@"didTapIconWithselectingItem.base: %@", [tmpTreeItem base]);
+	NSLog(@"didTapIconWithselectingItem.name: %@", tmpTreeItem.name);
 	
 	[self iconButtonAction:cell treeItem:tmpTreeItem];
 }
