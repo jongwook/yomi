@@ -16,11 +16,17 @@
 
 @implementation WorkspaceViewController
 
+@synthesize name;
 @synthesize path;
 
 -(id)init {
 	[self setDefaultSettings];
 	NSLog(@"WorkspaceViewController.init");
+	
+	// temp
+	NSString *workspace = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"workspace"];
+	path = [workspace stringByAppendingPathComponent:@"vbap"];
+	
 	return self;
 }
 

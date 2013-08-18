@@ -14,6 +14,7 @@
 
 @implementation CodeViewController
 
+@synthesize webView;
 @synthesize workspace;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -29,6 +30,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+	
+	// temp 
+	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:8192/web/prism.html"]]];
 }
 
 - (void)didReceiveMemoryWarning

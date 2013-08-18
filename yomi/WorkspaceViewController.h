@@ -11,6 +11,7 @@
 
 @interface WorkspaceViewController : MFSideMenuContainerViewController
 
+@property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *path;
 
 @end

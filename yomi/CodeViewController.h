@@ -11,6 +11,8 @@
 
 @interface CodeViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UIWebView *webView;
+
 @property (nonatomic, retain) WorkspaceViewController *workspace;
 
 - (IBAction)toggleLeftMenu:(id)sender;

@@ -15,9 +15,9 @@
 	volatile int stage;
 }
 
--(void)appendStatus:(NSString *)status replace:(BOOL)replace;
+- (void)appendStatus:(NSString *)status replace:(BOOL)replace;
 
--(void) showProject:(NSString *)path;
+- (void)showProject:(NSString*)name atPath:(NSString *)path;
 
 @end
 
@@ -83,11 +83,10 @@
 	
 	url = [url stringByReplacingOccurrencesOfString:@"https://" withString:@"http://"];
 	NSURL *cloneURL = [NSURL URLWithString:url];
-	NSString *path = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0];
-	path = [path stringByAppendingPathComponent:@"workspace"];
-	path = [path stringByAppendingPathComponent:name];
-	[[NSFileManager defaultManager] removeItemAtPath:path error:nil];
 	
+	NSString *workspace = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"workspace"];
+	NSString *path = [workspace stringByAppendingPathComponent:name];
+	[[NSFileManager defaultManager] removeItemAtPath:path error:nil];
 	NSURL *workingDirectoryURL = [NSURL fileURLWithPath:path];
 	
 	
@@ -154,19 +153,20 @@
 		
 		[self appendStatus:[NSString stringWithFormat:@"Cloning completed. head : %@", head.targetSHA] replace:NO];
 		
-		[self showProject:path];
+		[self showProject:name atPath:path];
 	});
 }
 
--(void) showProject:(NSString *)path {
+- (void)showProject:(NSString*)name atPath:(NSString *)path {
 	if (![NSThread isMainThread]) {
 		dispatch_async(dispatch_get_main_queue(), ^{
-			[self showProject:path];
+			[self showProject:name atPath:path];
 		});
 		return;
 	}
 	
 	WorkspaceViewController *container = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkspaceViewController"];
+	container.name = name;
 	container.path = path;
 	
 	[self.parentViewController presentModalViewController:container animated:YES];

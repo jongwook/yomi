@@ -63,7 +63,7 @@
 		[self setSelectionStyle:UITableViewCellSelectionStyleNone];
 		
 		iconButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		[iconButton setFrame:CGRectMake(0, 0, 100, 65)];
+		[iconButton setFrame:CGRectMake(0, 0, 30, 65)];
 		[iconButton setAdjustsImageWhenHighlighted:NO];
 		[iconButton addTarget:self action:@selector(iconButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 		[iconButton setImage:[UIImage imageNamed:@"item-icon-folder"] forState:UIControlStateNormal];
@@ -116,11 +116,11 @@
 	CGRect rect;
 	
 	rect = iconButton.frame;
-	rect.origin.x = 50 * level;
+	rect.origin.x = 20 * level;
 	iconButton.frame = rect;
 	
 	rect = titleTextField.frame;
-	rect.origin.x = 108 + 50 * level;
+	rect.origin.x = 38 + 20 * level;
 	titleTextField.frame = rect;
 }
 
