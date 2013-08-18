@@ -41,9 +41,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)toggleLeftMenu:(id)sender {
-	[workspace toggleLeftSideMenuCompletion:nil];
+- (void)openFile:(NSString *)path {
+	NSLog(@"Loading %@", path);
+	NSString *url = [NSString stringWithFormat:@"http://localhost:8192/web/prism.html?%@", path];
+	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
 }
-
 
 @end

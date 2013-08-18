@@ -64,4 +64,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) openFile:(NSString *)path {
+	[self.centerViewController openFile:path];
+}
+
 @end

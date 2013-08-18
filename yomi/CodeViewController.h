@@ -15,6 +15,6 @@
 
 @property (nonatomic, retain) WorkspaceViewController *workspace;
 
-- (IBAction)toggleLeftMenu:(id)sender;
+- (void)openFile:(NSString *)path;
 
 @end

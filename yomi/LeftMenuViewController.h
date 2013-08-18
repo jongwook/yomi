@@ -10,7 +10,7 @@
 #import "KOTreeViewController.h"
 #import "WorkspaceViewController.h"
 
-@interface LeftMenuViewController : KOTreeViewController
+@interface LeftMenuViewController : KOTreeViewController <KOTreeViewControllerDelegate>
 
 @property (nonatomic, retain) WorkspaceViewController *workspace;
 

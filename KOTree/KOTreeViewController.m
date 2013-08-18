@@ -40,6 +40,7 @@
 
 @synthesize treeTableView;
 @synthesize treeItems;
+@synthesize delegate;
 
 - (NSMutableArray *)listItemsAtPath:(NSString *)path {
 	// to be overridden
@@ -162,7 +163,6 @@
 		
 		BOOL contains = NO;
 		
-		NSLog(@"Examining %@/%@", item.path, item.name);
 		for (KOTreeItem *tmp2TreeItem in self.treeItems) {
 			if ([tmp2TreeItem isEqualToSelectingItem:item]) {
 				contains = YES;
@@ -192,25 +192,18 @@
 		[self.treeItems removeObject:tmp2TreeItem];
 	}
 	
-	
 	if ([removeIndexPaths count]) {
 		[treeTableView deleteRowsAtIndexPaths:removeIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
 		[(UILabel *)cell.accessoryView setText:@"∨"];
 	}
-}
-
-#pragma mark - Actions
-
-- (void)iconButtonAction:(KOTreeTableViewCell *)cell treeItem:(KOTreeItem *)tmpTreeItem {
-
+	
+	[delegate KOTreeViewController:self didTapOnTreeItem:cell.treeItem];
 }
 
 #pragma mark - KOTreeTableViewCellDelegate
 
-- (void)treeTableViewCell:(KOTreeTableViewCell *)cell didTapIconWithTreeItem:(KOTreeItem *)tmpTreeItem {
-	NSLog(@"didTapIconWithselectingItem.name: %@", tmpTreeItem.name);
-	
-	[self iconButtonAction:cell treeItem:tmpTreeItem];
+- (void)treeTableViewCell:(KOTreeTableViewCell *)cell didTapIconWithTreeItem:(KOTreeItem *)treeItem {
+	[delegate KOTreeViewController:self didTapOnTreeItem:treeItem];
 }
 
 @end

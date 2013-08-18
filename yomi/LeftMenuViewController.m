@@ -34,6 +34,7 @@
 {
     [super viewDidLoad];
 	
+	self.delegate = self;
 	basepath = self.workspace.path;
 	
 	items = [NSMutableDictionary dictionary];
@@ -96,6 +97,11 @@
 	return [NSMutableArray arrayWithArray:items[path]];
 }
 
+- (void)KOTreeViewController:(KOTreeViewController *)controller didTapOnTreeItem:(KOTreeItem *)treeItem {
+	NSString *path = [treeItem.path stringByAppendingPathComponent:treeItem.name];
+	
+	[workspace openFile:path];
+}
 
 
 @end

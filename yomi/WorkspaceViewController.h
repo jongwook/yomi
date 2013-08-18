@@ -11,6 +11,8 @@
 
 @interface WorkspaceViewController : MFSideMenuContainerViewController
 
+-(void) openFile:(NSString *)path;
+
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *path;
 
