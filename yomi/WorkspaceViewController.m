@@ -25,6 +25,7 @@
 	
 	// temp
 	NSString *workspace = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"workspace"];
+	name = @"vbap";
 	path = [workspace stringByAppendingPathComponent:@"vbap"];
 	
 	return self;
@@ -64,8 +65,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) openFile:(NSString *)path {
-	[self.centerViewController openFile:path];
+- (void) openFile:(NSString *)localpath {
+	[self.centerViewController openFile:[NSString stringWithFormat:@"/%@%@", name, localpath]];
 }
 
 @end

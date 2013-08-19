@@ -1,12 +1,23 @@
 <html>
 <head>
-	<title>Prism test</title>	
-</head>
-<body>
-	<pre class="language-markup">How meta is it? &lt;hello&gt</pre>
-	<pre class="language-css">hello {width: hello;} world</pre>
-	<pre class="language-text"><script>document.write(location.search.substr(1));</script></pre>
-	<script type="text/javascript" src="prism.js"></script>
+	<title>Prism test</title>
 	<link rel="stylesheet" href="prism.css"></link>
+</head>
+<body style="background: hsl(0, 0%, 8%);">
+	<pre id="code"></pre>
+	<script>
+		var code = document.getElementById("code");
+		var path = location.search.substr(1);
+		if (path) code.setAttribute("data-src", "/data" + path);
+	</script>
+	<script type="text/javascript" src="prism.js" data-default-language="markup"></script>
+	<script type="text/javascript">
+		code.style.overflow = "visible";
+		code.style.border = "none";
+		code.style.boxShadow = "none";
+		var child = code.childNodes[0];
+		child.setAttribute("class", "language-c");
+		Prism.highlightAll();
+	</script>
 </body>
 </html>

@@ -98,9 +98,11 @@
 }
 
 - (void)KOTreeViewController:(KOTreeViewController *)controller didTapOnTreeItem:(KOTreeItem *)treeItem {
-	NSString *path = [treeItem.path stringByAppendingPathComponent:treeItem.name];
-	
-	[workspace openFile:path];
+	// TODO: detect file type and show only text file
+	if (!treeItem.isDirectory) {
+		NSString *path = [treeItem.path stringByAppendingPathComponent:treeItem.name];
+		[workspace openFile:path];
+	}
 }
 
 

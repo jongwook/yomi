@@ -162,7 +162,13 @@ typedef enum {
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     [super willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
-    
+	
+	if (toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+		[self.centerViewController view].frame = CGRectMake(0, 0, 768, 1024);
+	} else {
+		[self.centerViewController view].frame = CGRectMake(0, 0, 1024, 768);
+	}
+	
     [self.shadow shadowedViewWillRotate];
 }
 
