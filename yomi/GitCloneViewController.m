@@ -8,7 +8,8 @@
 
 #import "GitCloneViewController.h"
 #import "WorkspaceViewController.h"
-#import "GTRepository.h"
+
+#import <ObjectiveGit.h>
 
 @interface GitCloneViewController () {
 	GTRepository *repository;
@@ -89,6 +90,8 @@
 	[[NSFileManager defaultManager] removeItemAtPath:path error:nil];
 	NSURL *workingDirectoryURL = [NSURL fileURLWithPath:path];
 	
+	static double lastUpdate;
+	lastUpdate = CACurrentMediaTime();
 	
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 		NSError *err = nil;
@@ -104,15 +107,27 @@
 								   withCheckout:YES
 										  error:&err
 						  transferProgressBlock:^(const git_transfer_progress *progress) {
-							  dispatch_async(dispatch_get_main_queue(), ^{ [self.progressView setProgress:(float)progress->indexed_objects/progress->total_objects]; });
+							  double now = CACurrentMediaTime();
+							  BOOL shouldUpdate = NO;
+							  if (now - lastUpdate > 0.2) {
+								  shouldUpdate = true;
+								  lastUpdate = now;
+							  }
 							  
-							  NSString *status = [NSString stringWithFormat:@"transfer progress : %d/%d, %zu bytes", progress->received_objects, progress->total_objects, progress->received_bytes];
-
+							  if (shouldUpdate) {
+								  dispatch_async(dispatch_get_main_queue(), ^{
+									  [self.progressView setProgress:(float)progress->indexed_objects/progress->total_objects];
+								  });
+							  }
+							  
+							  NSString *status = [NSString stringWithFormat:@"Transfer progress : %d/%d, %zu KB received", progress->received_objects, progress->total_objects, progress->received_bytes / 1024];
+							  
 							  if ( stage == 0 ) {
 								  stage = 1;
+								  
 								  [self appendStatus:status replace:NO];
 							  } else {
-								  [self appendStatus:status replace:YES];
+								  if (shouldUpdate) [self appendStatus:status replace:YES];
 							  }
 							  
 							  if ( stage == 1 && progress->received_objects == progress->total_objects ) {
@@ -123,9 +138,20 @@
 							  NSLog(@"%@", status);
 						  }
 						  checkoutProgressBlock:^(NSString *path, NSUInteger completedSteps, NSUInteger totalSteps) {
-							  dispatch_async(dispatch_get_main_queue(), ^{ [self.progressView setProgress:(float)completedSteps/totalSteps]; });
+							  double now = CACurrentMediaTime();
+							  BOOL shouldUpdate = NO;
+							  if (now - lastUpdate > 0.2) {
+								  shouldUpdate = true;
+								  lastUpdate = now;
+							  }
 							  
-							  NSString *status = [NSString stringWithFormat:@"checkout progress : %d/%d at %@", completedSteps, totalSteps, path];
+							  if (shouldUpdate) {
+								  dispatch_async(dispatch_get_main_queue(), ^{
+									  [self.progressView setProgress:(float)completedSteps/totalSteps];
+								  });
+							  }
+							  
+							  NSString *status = [NSString stringWithFormat:@"Checkout progress : %d/%d at %@", completedSteps, totalSteps, path];
 							  if ( stage == 2 ) {
 								  stage = 3;
 								  [self appendStatus:status replace:NO];

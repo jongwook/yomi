@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="a5j-ok-4Hr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="cjb-QW-J88">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -467,6 +467,10 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GkD-Ld-mWd">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="k3p-E1-YQS" id="ySH-SC-fQT"/>
+                                    <outlet property="delegate" destination="k3p-E1-YQS" id="FcE-NR-I3T"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF1-qS-JB2">
                                 <constraints>
@@ -497,6 +501,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="tableView" destination="GkD-Ld-mWd" id="B34-6R-8M5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R30-tK-6t4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -626,12 +633,17 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NtQ-DS-h7w">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5K3-e3-LIx"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NtQ-DS-h7w" firstAttribute="top" secondItem="HbK-aY-uAj" secondAttribute="top" type="default" id="Bwl-kc-Tr8"/>
                             <constraint firstItem="NtQ-DS-h7w" firstAttribute="leading" secondItem="HbK-aY-uAj" secondAttribute="leading" type="default" id="Un6-w5-g65"/>
+                            <constraint firstItem="5K3-e3-LIx" firstAttribute="bottom" secondItem="HbK-aY-uAj" secondAttribute="bottom" type="default" id="YI1-p2-xPM"/>
                             <constraint firstItem="NtQ-DS-h7w" firstAttribute="bottom" secondItem="HbK-aY-uAj" secondAttribute="bottom" type="default" id="f76-7r-ofW"/>
+                            <constraint firstAttribute="trailing" secondItem="5K3-e3-LIx" secondAttribute="trailing" constant="707" id="fZ3-xS-Wac"/>
+                            <constraint firstItem="5K3-e3-LIx" firstAttribute="top" secondItem="HbK-aY-uAj" secondAttribute="top" type="default" id="gPR-q9-yea"/>
+                            <constraint firstItem="5K3-e3-LIx" firstAttribute="leading" secondItem="HbK-aY-uAj" secondAttribute="leading" type="default" id="iI3-id-vfY"/>
                             <constraint firstItem="NtQ-DS-h7w" firstAttribute="trailing" secondItem="HbK-aY-uAj" secondAttribute="trailing" type="default" id="old-Yn-8ob"/>
                         </constraints>
                     </view>
@@ -726,6 +738,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/OpenExistingViewController.h"/>
             <relationships>
                 <relationship kind="action" name="close:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="SearchGithubViewController" superclassName="UIViewController">

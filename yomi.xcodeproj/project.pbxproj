@@ -135,6 +135,7 @@
 		5130C33E17BFE7A30083F30A /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C33717BFE7A30083F30A /* GCDWebServerConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5130C33F17BFE7A30083F30A /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C33A17BFE7A30083F30A /* GCDWebServerRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5130C34017BFE7A30083F30A /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130C33C17BFE7A30083F30A /* GCDWebServerResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5130C34417C2061A0083F30A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5130C34317C206190083F30A /* QuartzCore.framework */; };
 		5174F1BB17B6921100ACF06B /* libObjectiveGit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174F1BA17B68EA700ACF06B /* libObjectiveGit-iOS.a */; };
 		5174F1C217B69A9500ACF06B /* GitCloneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5174F1C117B69A9500ACF06B /* GitCloneViewController.m */; };
 		5174F1C417B8077200ACF06B /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174F1C317B8077200ACF06B /* libz.1.2.5.dylib */; };
@@ -484,6 +485,8 @@
 		5130C33A17BFE7A30083F30A /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
 		5130C33B17BFE7A30083F30A /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
 		5130C33C17BFE7A30083F30A /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		5130C34117C205C90083F30A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		5130C34317C206190083F30A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5174F1AB17B68EA700ACF06B /* ObjectiveGitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveGitFramework.xcodeproj; path = "objective-git/ObjectiveGitFramework.xcodeproj"; sourceTree = "<group>"; };
 		5174F1C017B69A9500ACF06B /* GitCloneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitCloneViewController.h; sourceTree = "<group>"; };
 		5174F1C117B69A9500ACF06B /* GitCloneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitCloneViewController.m; sourceTree = "<group>"; };
@@ -582,6 +585,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5130C34417C2061A0083F30A /* QuartzCore.framework in Frameworks */,
 				5130C33017BFE6960083F30A /* MobileCoreServices.framework in Frameworks */,
 				5130C32E17BFE63B0083F30A /* CFNetwork.framework in Frameworks */,
 				5174F1C417B8077200ACF06B /* libz.1.2.5.dylib in Frameworks */,
@@ -955,6 +959,8 @@
 				5130C1A317B95DD90083F30A /* libgit2 */,
 				5174F1C317B8077200ACF06B /* libz.1.2.5.dylib */,
 				5130C33317BFE7A30083F30A /* GCDWebServer */,
+				5130C34317C206190083F30A /* QuartzCore.framework */,
+				5130C34117C205C90083F30A /* CoreAudio.framework */,
 				5130C32F17BFE6950083F30A /* MobileCoreServices.framework */,
 				5130C32D17BFE63B0083F30A /* CFNetwork.framework */,
 				518FD74D17AE9FC300A33FAE /* UIKit.framework */,
@@ -1554,6 +1560,7 @@
 					"objective-git/Classes",
 					"objective-git/libgit2/include",
 					"objective-git/libgit2/src",
+					"objective-git/Classes/Categories",
 				);
 				INFOPLIST_FILE = "yomi/yomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -1577,6 +1584,7 @@
 					"objective-git/Classes",
 					"objective-git/libgit2/include",
 					"objective-git/libgit2/src",
+					"objective-git/Classes/Categories",
 				);
 				INFOPLIST_FILE = "yomi/yomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;

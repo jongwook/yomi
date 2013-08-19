@@ -25,39 +25,39 @@
 
 #import "git2.h"
 
-#import <ObjectiveGit/GTRepository.h>
-#import <ObjectiveGit/GTEnumerator.h>
-#import <ObjectiveGit/GTCommit.h>
-#import <ObjectiveGit/GTSignature.h>
-#import <ObjectiveGit/GTTree.h>
-#import <ObjectiveGit/GTTreeEntry.h>
-#import <ObjectiveGit/GTTreeBuilder.h>
-#import <ObjectiveGit/GTBlob.h>
-#import <ObjectiveGit/GTTag.h>
-#import <ObjectiveGit/GTIndex.h>
-#import <ObjectiveGit/GTIndexEntry.h>
-#import <ObjectiveGit/GTReference.h>
-#import <ObjectiveGit/GTBranch.h>
-#import <ObjectiveGit/GTObject.h>
-#import <ObjectiveGit/GTRemote.h>
-#import <ObjectiveGit/GTConfiguration.h>
-#import <ObjectiveGit/GTReflog.h>
-#import <ObjectiveGit/GTReflogEntry.h>
-#import <ObjectiveGit/GTOID.h>
-#import <ObjectiveGit/GTSubmodule.h>
+#import <GTRepository.h>
+#import <GTEnumerator.h>
+#import <GTCommit.h>
+#import <GTSignature.h>
+#import <GTTree.h>
+#import <GTTreeEntry.h>
+#import <GTTreeBuilder.h>
+#import <GTBlob.h>
+#import <GTTag.h>
+#import <GTIndex.h>
+#import <GTIndexEntry.h>
+#import <GTReference.h>
+#import <GTBranch.h>
+#import <GTObject.h>
+#import <GTRemote.h>
+#import <GTConfiguration.h>
+#import <GTReflog.h>
+#import <GTReflogEntry.h>
+#import <GTOID.h>
+#import <GTSubmodule.h>
 
-#import <ObjectiveGit/GTObjectDatabase.h>
-#import <ObjectiveGit/GTOdbObject.h>
+#import <GTObjectDatabase.h>
+#import <GTOdbObject.h>
 
-#import <ObjectiveGit/NSError+Git.h>
-#import <ObjectiveGit/NSData+Git.h>
-#import <ObjectiveGit/NSString+Git.h>
+#import <NSError+Git.h>
+#import <NSData+Git.h>
+#import <NSString+Git.h>
 
-#import <ObjectiveGit/GTDiff.h>
-#import <ObjectiveGit/GTDiffDelta.h>
-#import <ObjectiveGit/GTDiffFile.h>
-#import <ObjectiveGit/GTDiffHunk.h>
-#import <ObjectiveGit/GTDiffLine.h>
+#import <GTDiff.h>
+#import <GTDiffDelta.h>
+#import <GTDiffFile.h>
+#import <GTDiffHunk.h>
+#import <GTDiffLine.h>
 
 // This must be called before doing any ObjectiveGit work.  Under normal
 // circumstances, it will automatically be called on your behalf.

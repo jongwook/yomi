@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OpenExistingViewController : UIViewController
+@interface OpenExistingViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 -(IBAction)close:(id)sender;
+
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
 
 @end
