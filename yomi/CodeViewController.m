@@ -31,8 +31,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 	
-	// temp 
-	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:8192/web/prism.html"]]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,8 +40,14 @@
 }
 
 - (void)openFile:(NSString *)path {
-	NSLog(@"Loading %@", path);
+	NSLog(@"Loading code file at %@", path);
 	NSString *url = [NSString stringWithFormat:@"http://localhost:8192/web/prism.html?%@", path];
+	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+}
+
+- (void)openMarkdown:(NSString *)path {
+	NSLog(@"Loading markdown page at %@", path);
+	NSString *url = [NSString stringWithFormat:@"http://localhost:8192/web/markdown.html?%@", path];
 	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
 }
 

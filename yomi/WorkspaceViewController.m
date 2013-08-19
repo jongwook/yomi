@@ -23,11 +23,6 @@
 	[self setDefaultSettings];
 	NSLog(@"WorkspaceViewController.init");
 	
-	// temp
-	NSString *workspace = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"workspace"];
-	name = @"vbap";
-	path = [workspace stringByAppendingPathComponent:@"vbap"];
-	
 	return self;
 }
 
@@ -57,6 +52,18 @@
 	((LeftMenuViewController *)self.leftMenuViewController).workspace = self;
 	((CodeViewController *)self.centerViewController).workspace = self;
 	self.rightMenuViewController = nil;
+	
+	// look for readme.md or such
+	NSArray *candidates = @[@"README.md", @"README.markdown", @"README", @"readme.md", @"readme.markdown"];
+	for (NSString *candidate in candidates) {
+		NSString *filepath = [path stringByAppendingPathComponent:candidate];
+		if ([[NSFileManager defaultManager] fileExistsAtPath:filepath]) {
+			[(CodeViewController *)self.centerViewController openMarkdown:[NSString stringWithFormat:@"/%@/%@", name, candidate]];
+			return;
+		}
+	}
+	
+	[(CodeViewController *)self.centerViewController openFile:[NSString stringWithFormat:@"/%@", name]];
 }
 
 - (void)didReceiveMemoryWarning
