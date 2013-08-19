@@ -16,5 +16,6 @@
 @property (nonatomic, retain) WorkspaceViewController *workspace;
 
 - (void)openFile:(NSString *)path;
+- (IBAction)close:(id)sender;
 
 @end

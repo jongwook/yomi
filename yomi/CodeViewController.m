@@ -47,4 +47,8 @@
 	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
 }
 
+- (IBAction)close:(id)sender {
+	[self.workspace dismissModalViewControllerAnimated:YES];
+}
+
 @end

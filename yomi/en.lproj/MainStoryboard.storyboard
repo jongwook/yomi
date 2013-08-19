@@ -634,10 +634,28 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5K3-e3-LIx"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KA-5G-cf8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="DBU-ZL-e3w"/>
+                                    <constraint firstAttribute="width" constant="25" id="ONu-CG-pjE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="×">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="9af-qi-qmz" eventType="touchUpInside" id="sWs-kc-wSo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NtQ-DS-h7w" firstAttribute="top" secondItem="HbK-aY-uAj" secondAttribute="top" type="default" id="Bwl-kc-Tr8"/>
+                            <constraint firstItem="3KA-5G-cf8" firstAttribute="top" secondItem="HbK-aY-uAj" secondAttribute="top" type="default" id="EFG-CZ-MDw"/>
                             <constraint firstItem="NtQ-DS-h7w" firstAttribute="leading" secondItem="HbK-aY-uAj" secondAttribute="leading" type="default" id="Un6-w5-g65"/>
                             <constraint firstItem="5K3-e3-LIx" firstAttribute="bottom" secondItem="HbK-aY-uAj" secondAttribute="bottom" type="default" id="YI1-p2-xPM"/>
                             <constraint firstItem="NtQ-DS-h7w" firstAttribute="bottom" secondItem="HbK-aY-uAj" secondAttribute="bottom" type="default" id="f76-7r-ofW"/>
@@ -645,6 +663,7 @@
                             <constraint firstItem="5K3-e3-LIx" firstAttribute="top" secondItem="HbK-aY-uAj" secondAttribute="top" type="default" id="gPR-q9-yea"/>
                             <constraint firstItem="5K3-e3-LIx" firstAttribute="leading" secondItem="HbK-aY-uAj" secondAttribute="leading" type="default" id="iI3-id-vfY"/>
                             <constraint firstItem="NtQ-DS-h7w" firstAttribute="trailing" secondItem="HbK-aY-uAj" secondAttribute="trailing" type="default" id="old-Yn-8ob"/>
+                            <constraint firstItem="3KA-5G-cf8" firstAttribute="trailing" secondItem="HbK-aY-uAj" secondAttribute="trailing" type="default" id="xMd-Tr-rkS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -695,6 +714,7 @@
         <class className="CodeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CodeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="close:"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
