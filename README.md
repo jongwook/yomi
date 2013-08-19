@@ -5,7 +5,7 @@ Yomi is an iPad app for everyday code reading.
 
 ## Motivation
 
-There are plenty of open source projects from which we developers can learn, by just reading the code thoroughly and carefully. However, sitting in from of the desk for a long time doing serious code reading is not always the easiest thing to do. Sometimes we need more comfortable way to read and concentrate on the code without all the keyboard and the mouce. So I present Yomi, the missing code viewer app for iPad.
+There are plenty of open source projects from which we developers can learn, by just reading the code thoroughly and carefully. However, sitting in front of the desk for a long time doing serious code reading is not always the easiest thing to do. Sometimes we need more comfortable ways to read and concentrate on the code without all the keyboard and the mouce. So I present Yomi, the missing code viewer app for iPad.
 
 ## Screenshots
 
